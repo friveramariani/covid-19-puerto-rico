@@ -174,7 +174,7 @@
         <li><a href="#Lateness7Day_section">Tendencia de rezago de datos</a></li>
         <li><a href="#WeekdayBias_section">Tendencias por día de semana</a></li>
         <li><a href="#NewCases_section">Tendencia de casos nuevos por fecha de evento (promedios 7 días)</a></li>
-        <li><a href="#MunicipalMap_section">Casos recientes por municipio</a></li>
+        <li><a href="#MunicipalMap_section">Mapas municipales de casos recientes</a></li>
         <li><a href="#Municipal_section">Historial de casos confirmados por municipio (fecha de boletín)</a></li>
         <li><a href="#DailyMissingTests_section">Pruebas duplicadas y perdidas diarias</a></li>
         <li><a href="#CumulativeMissingTests_section">Pruebas duplicadas y perdidas acumuladas</a></li>
@@ -390,7 +390,7 @@
 
 
 <div class="section" id="MunicipalMap_section">
-    <h1>Casos recientes por municipio</h1>
+    <h1>Mapas municipales de casos recientes</h1>
 
     <div id="MunicipalMap"></div>
     <script type="text/javascript">
@@ -399,10 +399,20 @@
 
     <h3>¿Qué es esto?</h3>
 
-    <p>Casos nuevos confirmados reportados por municipio, tanto para el boletín más reciente
-        como para los siete más recientes. La primera ayuda identificar dónde son los casos
-        reportados en el nuevo boletín; la segunda a identificar municipios que pudieran
-        haber experimentado brotes recientemente.</p>
+    <p>Casos nuevos confirmados reportados por municipio, visto de cuatro formas:</p>
+
+    <ol>
+        <li>Número de casos nuevos registrados en el boletín más reciente;</li>
+        <li>Número de casos nuevos registrados en los siete boletines más recientes;</li>
+        <li>Crecida del número de casos nuevos registrados en el boletín más reciente,
+            respecto a los casos registrados en los siete anteriores a este;</li>
+        <li>Crecida del número de casos nuevos registrados en los siete boletines más
+            recientes, respecto a los casos registrados en los siete anteriores a estos.</li>
+    </ol>
+
+    <p>La primera ayuda identificar dónde son los casos reportados en el nuevo boletín;
+        las demás a identificar municipios que pudieran haber experimentado brotes
+        recientemente.</p>
 
     <p>Los tonos rojáceos indican valores positivos, y los grisáceos o negros valores
         negativos, porque sí, a veces boletines posteriores le restan casos confirmados
