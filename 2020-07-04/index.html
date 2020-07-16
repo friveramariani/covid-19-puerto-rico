@@ -196,15 +196,13 @@
         <li><a href="#LatenessDaily_section">Rezago de datos de cada boletín</a></li>
         <li><a href="#Lateness7Day_section">Tendencia de rezago de datos</a></li>
         <li><a href="#WeekdayBias_section">Tendencias por día de semana</a></li>
-        <li><a href="#Doubling_section">Tiempos de duplicación de casos por fecha de evento</a></li>
         <li><a href="#Hospitalizations_section">Historial de hospitalizaciones</a></li>
         <li><a href="#MunicipalMap_section">Mapas municipales de casos recientes</a></li>
         <li><a href="#Municipal_section">Historial de casos confirmados por municipio (fecha de boletín)</a></li>
-        <li><a href="#NewPositiveRate_section">Tasa de positividad (pruebas nuevas)</a></li>
-        <li><a href="#CumulativePositiveRate_section">Tasa de positividad (acumuladas)</a></li>
+        <li><a href="#NewPositiveRate_section">Positividad (promedio 7 días)</a></li>
+        <li><a href="#NewDailyTestsPerCapita_section">Pruebas per cápita (promedio 7 días)</a></li>
         <li><a href="#CumulativeTestsVsCases_section">Pruebas vs. casos (acumulado)</a></li>
-        <li><a href="#NewDailyTestsPerCapita_section">Pruebas nuevas por mil habitantes, promedio diario</a></li>
-        <li><a href="#CumulativeTestsPerCapita_section">Pruebas acumuladas por mil habitantes</a></li>
+        <li><a href="#DailyMissingTests_section">Pruebas duplicadas y perdidas diarias</a></li>
         <li><a href="#ConsecutiveBulletinMismatch_section">Descuadre de encabezado de boletín</a></li>
         <li><a href="#BulletinChartMismatch_section">Descuadre de boletín y gráficas</a></li>
         <li><a href="#Terminology_section">Terminología</a></li>
@@ -425,25 +423,6 @@
 </div>
 
 
-<div class="section" id="Doubling_section">
-    <h1>Tiempos de duplicación de casos por fecha de evento</h1>
-
-    <div id="Doubling" class="chart"></div>
-    <script type="text/javascript">
-      embedChart('Doubling', bulletin_date);
-    </script>
-
-    <h3>¿Qué es esto?</h3>
-
-    <p>Las tendencias de la velocidad a la que han crecido los casos, expresadas
-        en términos de tiempos de duplicación constante (duplicación cada dos días,
-        tres días, cuatro días, etc.), y por ventanas de anchos de 7, 14 y 21 días.</p>
-
-    <p>Esto es, para cada fecha, el ancho de ventana <i>n</i> dividido entre la subida del
-        logaritmo base dos entre el valor acumulado hace <i>n</i> días y esa fecha.</p>
-</div>
-
-
 <div class="section" id="Hospitalizations_section">
     <h1>Historial de hospitalizaciones</h1>
 
@@ -527,7 +506,7 @@
 
 
 <div class="section" id="NewPositiveRate_section">
-    <h1>Tasa de positividad (pruebas nuevas)</h1>
+    <h1>Positividad (promedio 7 días)</h1>
 
     <div id="NewPositiveRate"></div>
     <script type="text/javascript">
@@ -541,118 +520,44 @@
 
     <h3>¿Qué es esto?</h3>
 
-    <p>Las tasas de positividad de según los datos del Departamento de Salud, usando tanto
-        el más reciente informe de pruebas moleculares reportadas por laboratorios a su Bio
-        Portal, como el número de casos confirmados reportados hasta la misma fecha. Se
-        acompaña con gráfica de <a href="https://ourworldindata.org/">Our World in Data</a>
+    <p>La tasa de positividad por fecha de toma de muestra, según datos que ha compartido el
+        Departamento de Salud de Puerto Rico con el Fideicomiso de Salud Pública de Puerto Rico.
+        Se acompaña con gráfica de <a href="https://ourworldindata.org/">Our World in Data</a>
         para poner estas cifras en contexto internacional.</p>
 
-    <p>Se calcula esta cifra aquí de dos maneras distintas:</p>
+    <p>Se calcula aquí la tasa de positividad de dos maneras distintas:</p>
 
     <ol>
         <li>Número de pruebas positivas dividido entre número total de pruebas;</li>
-        <li>Número de casos únicos confirmados dividido entre número total de pruebas.</li>
+        <li>Número de casos únicos confirmados (tomado de los informes regulares de Salud)
+            dividido entre número total de pruebas.</li>
     </ol>
 
     <p>La segunda de estas se entiende que es una división un tanto de "chinas con botellas"
         (i.e., cantidades que en realidad no deberían compararse), pero se ha optado por
-        incluirla por dos motivos prácticos:</p>
+        incluirla porque muchas colecciones de datos en EEUU (e.g., COVID Tracking Project)
+        e internacionales (e.g., Our World In Data) así lo calculan para muchos locales.
+        Lo cual quiere decir que a la hora de comparar el dato de Puerto Rico con el de otro
+        país hay que tener cuidado cuál de las dos se habla.</p>
+
+    <p>Otra advertencia es que el cálculo dado aquí para Puerto Rico hace uso de datos por
+        fecha de toma de muestra, y no de reporte de resultados como hacen muchas colecciones
+        de datos o informes.  Esto da números que reflejan la realidad más cercanamente, pero
+        acarrea dos desventajas:</p>
 
     <ol>
-        <li>Hay varios indicios de que el conteo de casos únicos del Departamento de Salud de
-            Puerto Rico produce resultados más adelantados que el conteo bruto de pruebas
-            positivas, y que por lo tanto la tasa de "chinas con botellas" dará alerta más
-            temprano si se deteriora la situación;</li>
-        <li>Muchas colecciones de datos internacionales (como la incluída de Our World in Data)
-            hacen el cálculo de "chinas con botellas" para muchos países por falta de mejores
-            datos.</li>
+        <li>Las cifras dadas para cualquier fecha no son finales, porque mañana pueden recibirse
+            nuevos resultados de muestras tomadas en esas mismas fechas, y que llevarán
+            a que se revisen los valores aquí calculados;</li>
+        <li>Un caso especial muy importante de esto es que <b>caídas o subidas repentinas al final
+            de la curva no son fiables</b>, porque para las fechas más recientes se espera que se
+            incorpore una mayor proporción de nuevos resultados.</li>
     </ol>
-
-    <p>No obstante lo anterior, no se calcula casos únicos / pruebas con datos del Fideicomiso
-        de Salud (PRPHT), por entenderse (a partir de información examinada) que el numerador
-        de esta división contiene muchos casos cuyas pruebas no se incluyen en el denominador,
-        ya que Salud no reporta pruebas de su laboratorio al Fideicomiso y entre estas parecen
-        haber cientos de resultados positivos.</p>
-
-    <h3>Advertencias</h3>
-
-    <p>El Departamento de Salud solo ha publicado el informe de Bioportal irregular e
-        infrecuentemente, y existen serias dudas sobre la calidad de los datos de su
-        conteo de pruebas.  Sin embargo esas dudas parecen apuntar a:</p>
-
-    <ol>
-        <li>Un subconteo general de las pruebas moleculares (se han hecho muchas más pruebas
-            de las que reporta Salud);</li>
-        <li>Prioridad en el conteo de pruebas positivas y nuevos casos únicos por encima del
-            conteo de las pruebas negativas y por tanto los totales de pruebas.</li>
-    </ol>
-
-    <p>Si entendemos así, entonces:</p>
-
-    <ol>
-        <li>Los números verdaderos de pruebas por 1,000 habitantes serían en realidad mayores
-            a los aquí calculados, porque el número de pruebas es el numerador y el denominador
-            se queda igual;</li>
-        <li>Las verdaderas tasas de positividad se esperaría que fueran semejantes o menores a
-            las aquí calculadas, suponiendo o bien que las pruebas contabilizadas son una muestra
-            representativa de las realizadas, o que si existe sesgo este es a favor de contabilizar
-            pruebas positivas y casos.</li>
-    </ol>
-
-    <p>En adición a esto, hay que advertir que este cálculo se realiza a partir de las fechas
-        que se anunciaron las pruebas y los casos, no las fechas que se tomaron las muestras.
-        Y esto pudiera cobrar mayor importancia por el serio rezago con que aparentan
-        contarse las pruebas.</p>
-</div>
-
-
-<div class="section" id="CumulativePositiveRate_section">
-    <h1>Tasa de positividad (acumuladas)</h1>
-
-    <div id="CumulativePositiveRate"></div>
-    <script type="text/javascript">
-        embedChart('CumulativePositiveRate', bulletin_date);
-    </script>
-
-    <div class="chart">
-        <iframe src="https://ourworldindata.org/grapher/covid-19-positive-rate-bar?tab=map&year=2020-07-04&time=2020-05-21..2020-07-04"
-                loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
-    </div>
-
-    <h3>¿Qué es esto?</h3>
-
-    <p>El mismo cálculo de tasa de positividad que arriba, pero con cifras
-        acumuladas en vez de nuevas.  Las mismas advertencias aplican.</p>
-</div>
-
-
-<div class="section" id="CumulativeTestsVsCases_section">
-    <h1>Pruebas vs. casos (acumulado)</h1>
-
-    <div id="CumulativeTestsVsCases"></div>
-    <script type="text/javascript">
-        embedChart('CumulativeTestsVsCases', bulletin_date);
-    </script>
-
-    <div class="chart">
-        <iframe src="https://ourworldindata.org/grapher/covid-19-tests-vs-cases-per-million-positivity-comparisons?xScale=linear&yScale=linear&time=2020-04-26..2020-07-05"
-                loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
-    </div>
-
-    <h3>¿Qué es esto?</h3>
-
-    <p>Otra forma de visualizar la tasa de positividad: trazando las cifras de número
-        de pruebas acumuladas en el eje vertical, y los casos confirmados acumulados
-        en el horizontal. Se ha optado aquí por una gráfica cuadrada con ejes en
-        proporción de 100 pruebas : 1 caso, tal que la diagonal que divide la gráfica
-        por el medio representa positividad de 1%. Las dos abajo representan 2% y 5%,
-        y la de arriba representa 0.5%. Curvas que se disparan hacia arriba son buenas;
-        curvas que se disparan a la derecha son malas.</p>
 </div>
 
 
 <div class="section" id="NewDailyTestsPerCapita_section">
-    <h1>Pruebas nuevas por mil habitantes, promedio diario</h1>
+    <h1>Pruebas per cápita (promedio 7 días)</h1>
 
     <div id="NewDailyTestsPerCapita"></div>
     <script type="text/javascript">
@@ -665,28 +570,90 @@
 
     <h3>¿Qué es esto?</h3>
 
-    <p>Cuántas pruebas diarias promedio se realizaron entre informes del Bioportal, por millar
-        de población.  Se presenta una gráfica de Our World in Data para comparación, pero
-        <b>advertencia</b>, OWID usa promedios rodantes de siete días, y nuestro cálculo aquí
-        es a partir de periodos irregulares entre los informes de Bioportal.</p>
+    <p>Cuántas pruebas diarias (promedio de 7 días) se realizaron por fecha de toma de muestra,
+        por millar de población.  Se presenta una gráfica de Our World in Data para comparación.</p>
+
+    <h3>Advertencia</h3>
+
+    <p>Como esta gráfica es por fecha de toma de muestra, las cifras que da no son finales
+        porque pueden registrarse luego más resultados para las mismas fechas. Y especialmente,
+        <b>caídas súbitas al final de la curva lo más seguro no son reales</b>.</p>
 </div>
 
-<div class="section" id="CumulativeTestsPerCapita_section">
-    <h1>Pruebas acumuladas por mil habitantes</h1>
 
-    <div id="CumulativeTestsPerCapita"></div>
+<div class="section" id="CumulativeTestsVsCases_section">
+    <h1>Pruebas vs. casos (acumulado)</h1>
+
+    <div id="CumulativeTestsVsCases"></div>
     <script type="text/javascript">
-        embedChart('CumulativeTestsPerCapita', bulletin_date);
+        embedChart('CumulativeTestsVsCases', bulletin_date);
     </script>
-
-    <div class="chart">
-        <iframe src="https://ourworldindata.org/grapher/full-list-cumulative-total-tests-per-thousand-map?year=2020-07-04&time=2020-05-21..2020-07-04"
-                loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>    </div>
 
     <h3>¿Qué es esto?</h3>
 
-    <p>Cuántas pruebas moleculares se han administrado cumulativamente, divido por millares
-        de población, acompañado de comparación internacional.</p>
+    <p>Otra forma de visualizar la positividad: trazando el número de pruebas acumuladas
+        en el eje vertical y los casos confirmados acumulados en el horizontal. Las líneas
+        entrecortadas brindan una referencia de cómo se traduce a positividad acumulada (que
+        vale advertir, no es lo mismo que positividad promedio de 7 días).</p>
+
+    <p>Curvas que se mueven hacia arriba son buenas; curvas que se mueven a la derecha son malas.</p>
+
+    <p>Ventaja de esta gráfica: te muestra las pruebas y casos per cápita acumulados
+        actuales de manera bien compacta, y la evolución de la positividad acumulada.
+        Desventaja: no tiene eje de tiempo como tal, aunque como son cifras acumuladas
+        puntos más arriba o a la derecha son generalmente más tardíos.</p>
+
+
+    <h3>Comparaciones internacionales</h3>
+
+    <div class="chart">
+        <iframe src="https://ourworldindata.org/grapher/covid-19-positive-rate-bar?tab=map&year=2020-07-04&time=2020-05-21..2020-07-04"
+                loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+    </div>
+
+    <div class="chart">
+    <iframe src="https://ourworldindata.org/grapher/full-list-cumulative-total-tests-per-thousand-map?year=2020-07-04&time=2020-05-21..2020-07-04"
+            loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+    </div>
+
+    <div class="chart">
+        <iframe src="https://ourworldindata.org/grapher/covid-19-tests-vs-cases-per-million-positivity-comparisons?xScale=linear&yScale=linear&time=2020-04-26..2020-07-05"
+                loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+    </div>
+</div>
+
+
+<div class="section" id="DailyMissingTests_section">
+    <h1>Pruebas duplicadas y perdidas diarias</h1>
+
+    <div id="DailyMissingTests"></div>
+    <script type="text/javascript">
+        embedChart('DailyMissingTests', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>La resta, por cada fecha de muestra, de:</p>
+    <ol>
+        <li>El número de casos confirmados (por prueba molecular) no duplicados
+            que el boletín le atribuye a esa fecha de muestra;</li>
+        <li>El número de pruebas positivas que la gráfica con datos <b>hasta
+            el 20 de mayo solamente</b> le atribuye a esa fecha de muestra.</li>
+    </ol>
+
+    <p>Ninguna de estas restas se supone que sea menos que cero, porque si has
+        confirmado tantos casos por prueba molecular tomada en tal fecha, se supone
+        que tengas por lo menos la misma cantidad de pruebas positivas tomadas
+        en esa misma fecha.  Pero se vé que no es así en estos datos.  Las fechas
+        que dan negativo las llamo <b>pruebas perdidas</b>—casos confirmados no
+        duplicados que se han reportado pero cuyas pruebas confirmatorias, a primera
+        vista, no parecen haberse contado.</p>
+
+    <p>Nótese que esto no es un procedimiento que de respuestas exactas, y puede
+        por ejemplo que una de las pruebas en exceso en fechas posteriores sea de
+        alguno de los pacientes que más temprano aparece como prueba "perdida."
+        El llamarlo "prueba perdida" no es un diagnóstico de la causa del descuadre,
+        sino un nombre breve.</p>
 </div>
 
 
