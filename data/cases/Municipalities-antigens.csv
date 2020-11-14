@@ -1,0 +1,649 @@
+bulletin_date,municipality,probable_cases,probable_cases_percent
+2020-11-06,Adjuntas,0,0
+2020-11-06,Aguada,0,0
+2020-11-06,Aguadilla,0,0
+2020-11-06,Aguas Buenas,1,1.5
+2020-11-06,Aibonito,0,0
+2020-11-06,Añasco,0,0
+2020-11-06,Arecibo,1,1.5
+2020-11-06,Arroyo,1,1.5
+2020-11-06,Barceloneta,0,0
+2020-11-06,Barranquitas,0,0
+2020-11-06,Bayamón,1,1.5
+2020-11-06,Cabo Rojo,0,0
+2020-11-06,Caguas,11,16.4
+2020-11-06,Camuy,2,3.0
+2020-11-06,Canóvanas,0,0
+2020-11-06,Carolina,4,6.0
+2020-11-06,Cataño,0,0
+2020-11-06,Cayey,0,0
+2020-11-06,Ceiba,0,0
+2020-11-06,Ciales,0,0
+2020-11-06,Cidra,0,0
+2020-11-06,Coamo,0,0
+2020-11-06,Comerío,0,0
+2020-11-06,Corozal,0,0
+2020-11-06,Culebra,0,0
+2020-11-06,Dorado,1,1.5
+2020-11-06,Fajardo,7,10.5
+2020-11-06,Florida,0,0
+2020-11-06,Guánica,0,0
+2020-11-06,Guayama,5,7.5
+2020-11-06,Guayanilla,0,0
+2020-11-06,Guaynabo,3,4.5
+2020-11-06,Gurabo,0,0
+2020-11-06,Hatillo,1,1.5
+2020-11-06,Hormigueros,0,0
+2020-11-06,Humacao,0,0
+2020-11-06,Isabela,8,12.0
+2020-11-06,Jayuya,0,0
+2020-11-06,Juana Díaz,0,0
+2020-11-06,Juncos,0,0
+2020-11-06,Lajas,0,0
+2020-11-06,Lares,0,0
+2020-11-06,Las Marías,0,0
+2020-11-06,Las Piedras,0,0
+2020-11-06,Loíza,0,0
+2020-11-06,Luquillo,0,0
+2020-11-06,Manatí,0,0
+2020-11-06,Maricao,0,0
+2020-11-06,Maunabo,0,0
+2020-11-06,Mayagüez,0,0
+2020-11-06,Moca,0,0
+2020-11-06,Morovis,0,0
+2020-11-06,Naguabo,0,0
+2020-11-06,Naranjito,0,0
+2020-11-06,Orocovis,0,0
+2020-11-06,Patillas,0,0
+2020-11-06,Peñuelas,0,0
+2020-11-06,Ponce,0,0
+2020-11-06,Quebradillas,10,15.0
+2020-11-06,Rincón,0,0
+2020-11-06,Río Grande,1,1.5
+2020-11-06,Sabana Grande,0,0
+2020-11-06,Salinas,0,0
+2020-11-06,San Germán,0,0
+2020-11-06,San Juan,4,6.0
+2020-11-06,San Lorenzo,0,0
+2020-11-06,San Sebastián,0,0
+2020-11-06,Santa Isabel,0,0
+2020-11-06,Toa Alta,0,0
+2020-11-06,Toa Baja,0,0
+2020-11-06,Trujillo Alto,1,1.5
+2020-11-06,Utuado,0,0
+2020-11-06,Vega Alta,0,0
+2020-11-06,Vega Baja,0,0
+2020-11-06,Vieques,0,0
+2020-11-06,Villalba,4,6.0
+2020-11-06,Yabucoa,1,1.5
+2020-11-06,Yauco,0,0
+2020-11-06,Otro lugar fuera de PR,0,
+2020-11-06,No disponible,10,
+2020-11-06,Total,77,
+2020-11-07,Adjuntas,0,0.0
+2020-11-07,Aguada,0,0.0
+2020-11-07,Aguadilla,0,0.0
+2020-11-07,Aguas Buenas,1,1.1
+2020-11-07,Aibonito,0,0.0
+2020-11-07,Añasco,0,0.0
+2020-11-07,Arecibo,1,1.1
+2020-11-07,Arroyo,1,1.1
+2020-11-07,Barceloneta,0,0.0
+2020-11-07,Barranquitas,0,0.0
+2020-11-07,Bayamón,1,1.1
+2020-11-07,Cabo Rojo,5,5.6
+2020-11-07,Caguas,15,16.7
+2020-11-07,Camuy,2,2.2
+2020-11-07,Canóvanas,0,0.0
+2020-11-07,Carolina,4,4.4
+2020-11-07,Cataño,0,0.0
+2020-11-07,Cayey,0,0.0
+2020-11-07,Ceiba,0,0.0
+2020-11-07,Ciales,0,0.0
+2020-11-07,Cidra,1,1.1
+2020-11-07,Coamo,0,0.0
+2020-11-07,Comerío,0,0.0
+2020-11-07,Corozal,0,0.0
+2020-11-07,Culebra,0,0.0
+2020-11-07,Dorado,1,1.1
+2020-11-07,Fajardo,7,7.8
+2020-11-07,Florida,0,0.0
+2020-11-07,Guánica,0,0.0
+2020-11-07,Guayama,4,4.4
+2020-11-07,Guayanilla,0,0.0
+2020-11-07,Guaynabo,2,2.2
+2020-11-07,Gurabo,5,5.6
+2020-11-07,Hatillo,1,1.1
+2020-11-07,Hormigueros,0,0.0
+2020-11-07,Humacao,0,0.0
+2020-11-07,Isabela,7,7.8
+2020-11-07,Jayuya,0,0.0
+2020-11-07,Juana Díaz,0,0.0
+2020-11-07,Juncos,0,0.0
+2020-11-07,Lajas,0,0.0
+2020-11-07,Lares,0,0.0
+2020-11-07,Las Marías,0,0.0
+2020-11-07,Las Piedras,0,0.0
+2020-11-07,Loíza,0,0.0
+2020-11-07,Luquillo,0,0.0
+2020-11-07,Manatí,0,0.0
+2020-11-07,Maricao,0,0.0
+2020-11-07,Maunabo,0,0.0
+2020-11-07,Mayagüez,1,1.1
+2020-11-07,Moca,0,0.0
+2020-11-07,Morovis,1,1.1
+2020-11-07,Naguabo,1,1.1
+2020-11-07,Naranjito,0,0.0
+2020-11-07,Orocovis,0,0.0
+2020-11-07,Patillas,0,0.0
+2020-11-07,Peñuelas,0,0.0
+2020-11-07,Ponce,0,0.0
+2020-11-07,Quebradillas,10,11.1
+2020-11-07,Rincón,0,0.0
+2020-11-07,Río Grande,1,1.1
+2020-11-07,Sabana Grande,0,0.0
+2020-11-07,Salinas,0,0.0
+2020-11-07,San Germán,0,0.0
+2020-11-07,San Juan,5,5.6
+2020-11-07,San Lorenzo,0,0.0
+2020-11-07,San Sebastián,0,0.0
+2020-11-07,Santa Isabel,0,0.0
+2020-11-07,Toa Alta,0,0.0
+2020-11-07,Toa Baja,0,0.0
+2020-11-07,Trujillo Alto,1,1.1
+2020-11-07,Utuado,0,0.0
+2020-11-07,Vega Alta,0,0.0
+2020-11-07,Vega Baja,0,0.0
+2020-11-07,Vieques,0,0.0
+2020-11-07,Villalba,11,12.2
+2020-11-07,Yabucoa,1,1.1
+2020-11-07,Yauco,0,0.0
+2020-11-07,Otro lugar fuera de PR,1,
+2020-11-07,No disponible,10,
+2020-11-07,Total,101,
+2020-11-08,Adjuntas,0,0
+2020-11-08,Aguada,0,0
+2020-11-08,Aguadilla,0,0
+2020-11-08,Aguas Buenas,1,1.1
+2020-11-08,Aibonito,0,0
+2020-11-08,Añasco,0,0
+2020-11-08,Arecibo,1,1.1
+2020-11-08,Arroyo,1,1.1
+2020-11-08,Barceloneta,0,0
+2020-11-08,Barranquitas,0,0
+2020-11-08,Bayamón,1,1.1
+2020-11-08,Cabo Rojo,5,5.3
+2020-11-08,Caguas,15,15.8
+2020-11-08,Camuy,2,2.1
+2020-11-08,Canóvanas,0,0
+2020-11-08,Carolina,4,4.2
+2020-11-08,Cataño,0,0
+2020-11-08,Cayey,0,0
+2020-11-08,Ceiba,0,0
+2020-11-08,Ciales,0,0
+2020-11-08,Cidra,1,1.1
+2020-11-08,Coamo,0,0
+2020-11-08,Comerío,0,0
+2020-11-08,Corozal,0,0
+2020-11-08,Culebra,0,0
+2020-11-08,Dorado,1,1.1
+2020-11-08,Fajardo,5,5.3
+2020-11-08,Florida,0,0
+2020-11-08,Guánica,0,0
+2020-11-08,Guayama,4,4.2
+2020-11-08,Guayanilla,0,0
+2020-11-08,Guaynabo,2,2.1
+2020-11-08,Gurabo,6,6.3
+2020-11-08,Hatillo,1,1.1
+2020-11-08,Hormigueros,0,0
+2020-11-08,Humacao,0,0
+2020-11-08,Isabela,6,6.3
+2020-11-08,Jayuya,0,0
+2020-11-08,Juana Díaz,0,0
+2020-11-08,Juncos,1,1.1
+2020-11-08,Lajas,0,0
+2020-11-08,Lares,0,0
+2020-11-08,Las Marías,0,0
+2020-11-08,Las Piedras,0,0
+2020-11-08,Loíza,0,0
+2020-11-08,Luquillo,0,0
+2020-11-08,Manatí,0,0
+2020-11-08,Maricao,0,0
+2020-11-08,Maunabo,0,0
+2020-11-08,Mayagüez,1,1.1
+2020-11-08,Moca,0,0
+2020-11-08,Morovis,2,2.1
+2020-11-08,Naguabo,7,7.4
+2020-11-08,Naranjito,0,0
+2020-11-08,Orocovis,0,0
+2020-11-08,Patillas,0,0
+2020-11-08,Peñuelas,0,0
+2020-11-08,Ponce,0,0
+2020-11-08,Quebradillas,10,10.5
+2020-11-08,Rincón,0,0
+2020-11-08,Río Grande,1,1.1
+2020-11-08,Sabana Grande,0,0
+2020-11-08,Salinas,0,0
+2020-11-08,San Germán,0,0
+2020-11-08,San Juan,5,5.3
+2020-11-08,San Lorenzo,0,0
+2020-11-08,San Sebastián,0,0
+2020-11-08,Santa Isabel,0,0
+2020-11-08,Toa Alta,0,0
+2020-11-08,Toa Baja,0,0
+2020-11-08,Trujillo Alto,1,1.1
+2020-11-08,Utuado,0,0
+2020-11-08,Vega Alta,0,0
+2020-11-08,Vega Baja,0,0
+2020-11-08,Vieques,0,0
+2020-11-08,Villalba,10,10.5
+2020-11-08,Yabucoa,1,1.1
+2020-11-08,Yauco,0,0
+2020-11-08,Otro lugar fuera de PR,1,
+2020-11-08,No disponible,11,
+2020-11-08,Total,107,
+2020-11-09,Adjuntas,0,0
+2020-11-09,Aguada,0,0
+2020-11-09,Aguadilla,0,0
+2020-11-09,Aguas Buenas,1,0.6
+2020-11-09,Aibonito,0,0
+2020-11-09,Añasco,8,5
+2020-11-09,Arecibo,2,1.2
+2020-11-09,Arroyo,1,0.6
+2020-11-09,Barceloneta,0,0
+2020-11-09,Barranquitas,0,0
+2020-11-09,Bayamón,5,3.1
+2020-11-09,Cabo Rojo,5,3.1
+2020-11-09,Caguas,18,11.2
+2020-11-09,Camuy,2,1.2
+2020-11-09,Canóvanas,1,0.6
+2020-11-09,Carolina,8,5
+2020-11-09,Cataño,0,0
+2020-11-09,Cayey,0,0
+2020-11-09,Ceiba,0,0
+2020-11-09,Ciales,0,0
+2020-11-09,Cidra,1,0.6
+2020-11-09,Coamo,0,0
+2020-11-09,Comerío,0,0
+2020-11-09,Corozal,0,0
+2020-11-09,Culebra,0,0
+2020-11-09,Dorado,1,0.6
+2020-11-09,Fajardo,5,3.1
+2020-11-09,Florida,0,0
+2020-11-09,Guánica,0,0
+2020-11-09,Guayama,5,3.1
+2020-11-09,Guayanilla,0,0
+2020-11-09,Guaynabo,5,3.1
+2020-11-09,Gurabo,6,3.7
+2020-11-09,Hatillo,1,0.6
+2020-11-09,Hormigueros,0,0
+2020-11-09,Humacao,0,0
+2020-11-09,Isabela,14,8.7
+2020-11-09,Jayuya,0,0
+2020-11-09,Juana Díaz,0,0
+2020-11-09,Juncos,12,7.5
+2020-11-09,Lajas,0,0
+2020-11-09,Lares,0,0
+2020-11-09,Las Marías,2,1.2
+2020-11-09,Las Piedras,1,0.6
+2020-11-09,Loíza,1,0.6
+2020-11-09,Luquillo,0,0
+2020-11-09,Manatí,0,0
+2020-11-09,Maricao,0,0
+2020-11-09,Maunabo,0,0
+2020-11-09,Mayagüez,1,0.6
+2020-11-09,Moca,2,1.2
+2020-11-09,Morovis,2,1.2
+2020-11-09,Naguabo,7,4.3
+2020-11-09,Naranjito,0,0
+2020-11-09,Orocovis,0,0
+2020-11-09,Patillas,0,0
+2020-11-09,Peñuelas,0,0
+2020-11-09,Ponce,0,0
+2020-11-09,Quebradillas,12,7.5
+2020-11-09,Rincón,0,0
+2020-11-09,Río Grande,2,1.2
+2020-11-09,Sabana Grande,0,0
+2020-11-09,Salinas,0,0
+2020-11-09,San Germán,0,0
+2020-11-09,San Juan,14,8.7
+2020-11-09,San Lorenzo,1,0.6
+2020-11-09,San Sebastián,0,0
+2020-11-09,Santa Isabel,0,0
+2020-11-09,Toa Alta,1,0
+2020-11-09,Toa Baja,0,0
+2020-11-09,Trujillo Alto,1,0.6
+2020-11-09,Utuado,0,0
+2020-11-09,Vega Alta,0,0
+2020-11-09,Vega Baja,0,0
+2020-11-09,Vieques,0,0
+2020-11-09,Villalba,12,7.5
+2020-11-09,Yabucoa,1,0.6
+2020-11-09,Yauco,0,0
+2020-11-09,Otro lugar fuera de PR,1,
+2020-11-09,No disponible,13,
+2020-11-09,Total,175,
+2020-11-10,Adjuntas,0,0
+2020-11-10,Aguada,1,0.3
+2020-11-10,Aguadilla,3,1
+2020-11-10,Aguas Buenas,2,0.7
+2020-11-10,Aibonito,0,0
+2020-11-10,Añasco,8,2.7
+2020-11-10,Arecibo,2,0.7
+2020-11-10,Arroyo,1,0.3
+2020-11-10,Barceloneta,0,0
+2020-11-10,Barranquitas,0,0
+2020-11-10,Bayamón,34,11.3
+2020-11-10,Cabo Rojo,5,1.7
+2020-11-10,Caguas,21,7
+2020-11-10,Camuy,3,1
+2020-11-10,Canóvanas,1,0.3
+2020-11-10,Carolina,19,6.3
+2020-11-10,Cataño,8,2.7
+2020-11-10,Cayey,0,0
+2020-11-10,Ceiba,0,0
+2020-11-10,Ciales,0,0
+2020-11-10,Cidra,1,0.3
+2020-11-10,Coamo,0,0
+2020-11-10,Comerío,0,0
+2020-11-10,Corozal,0,0
+2020-11-10,Culebra,0,0
+2020-11-10,Dorado,2,0.7
+2020-11-10,Fajardo,5,1.7
+2020-11-10,Florida,0,0
+2020-11-10,Guánica,0,0
+2020-11-10,Guayama,5,1.7
+2020-11-10,Guayanilla,0,0
+2020-11-10,Guaynabo,20,6.7
+2020-11-10,Gurabo,10,3.3
+2020-11-10,Hatillo,2,0.7
+2020-11-10,Hormigueros,0,0
+2020-11-10,Humacao,1,0.3
+2020-11-10,Isabela,23,7.7
+2020-11-10,Jayuya,0,0
+2020-11-10,Juana Díaz,0,0
+2020-11-10,Juncos,12,4
+2020-11-10,Lajas,0,0
+2020-11-10,Lares,0,0
+2020-11-10,Las Marías,2,0.7
+2020-11-10,Las Piedras,1,0.3
+2020-11-10,Loíza,1,0.3
+2020-11-10,Luquillo,0,0
+2020-11-10,Manatí,0,0
+2020-11-10,Maricao,0,0
+2020-11-10,Maunabo,0,0
+2020-11-10,Mayagüez,1,0.3
+2020-11-10,Moca,3,1
+2020-11-10,Morovis,2,0.7
+2020-11-10,Naguabo,7,2.3
+2020-11-10,Naranjito,0,0
+2020-11-10,Orocovis,0,0
+2020-11-10,Patillas,0,0
+2020-11-10,Peñuelas,0,0
+2020-11-10,Ponce,0,0
+2020-11-10,Quebradillas,12,4
+2020-11-10,Rincón,0,0
+2020-11-10,Río Grande,3,1
+2020-11-10,Sabana Grande,0,0
+2020-11-10,Salinas,0,0
+2020-11-10,San Germán,0,0
+2020-11-10,San Juan,45,15
+2020-11-10,San Lorenzo,1,0.3
+2020-11-10,San Sebastián,0,0
+2020-11-10,Santa Isabel,0,0
+2020-11-10,Toa Alta,3,1
+2020-11-10,Toa Baja,9,3
+2020-11-10,Trujillo Alto,3,1
+2020-11-10,Utuado,0,0
+2020-11-10,Vega Alta,2,0.7
+2020-11-10,Vega Baja,2,0.7
+2020-11-10,Vieques,0,0
+2020-11-10,Villalba,13,4.3
+2020-11-10,Yabucoa,1,0.3
+2020-11-10,Yauco,0,0
+2020-11-10,Otro lugar fuera de PR,1,
+2020-11-10,No disponible,20,
+2020-11-10,Total,321,
+2020-11-11,Adjuntas,0,0
+2020-11-11,Aguada,1,0.2
+2020-11-11,Aguadilla,3,0.7
+2020-11-11,Aguas Buenas,4,0.9
+2020-11-11,Aibonito,0,0
+2020-11-11,Añasco,9,2
+2020-11-11,Arecibo,2,0.4
+2020-11-11,Arroyo,1,0.2
+2020-11-11,Barceloneta,0,0
+2020-11-11,Barranquitas,0,0
+2020-11-11,Bayamón,47,10.2
+2020-11-11,Cabo Rojo,8,1.7
+2020-11-11,Caguas,44,9.6
+2020-11-11,Camuy,3,0.7
+2020-11-11,Canóvanas,4,0.9
+2020-11-11,Carolina,27,5.9
+2020-11-11,Cataño,11,2.4
+2020-11-11,Cayey,3,0.7
+2020-11-11,Ceiba,0,0
+2020-11-11,Ciales,0,0
+2020-11-11,Cidra,2,0.4
+2020-11-11,Coamo,3,0.7
+2020-11-11,Comerío,0,0
+2020-11-11,Corozal,1,0.2
+2020-11-11,Culebra,0,0
+2020-11-11,Dorado,2,0.4
+2020-11-11,Fajardo,5,1.1
+2020-11-11,Florida,0,0
+2020-11-11,Guánica,0,0
+2020-11-11,Guayama,5,1.1
+2020-11-11,Guayanilla,4,0.9
+2020-11-11,Guaynabo,23,5
+2020-11-11,Gurabo,13,2.8
+2020-11-11,Hatillo,2,0.4
+2020-11-11,Hormigueros,8,1.7
+2020-11-11,Humacao,4,0.9
+2020-11-11,Isabela,23,5
+2020-11-11,Jayuya,0,0
+2020-11-11,Juana Díaz,1,0.2
+2020-11-11,Juncos,19,4.1
+2020-11-11,Lajas,0,0
+2020-11-11,Lares,0,0
+2020-11-11,Las Marías,2,0.4
+2020-11-11,Las Piedras,3,0.7
+2020-11-11,Loíza,12,2.6
+2020-11-11,Luquillo,0,0
+2020-11-11,Manatí,0,0
+2020-11-11,Maricao,0,0
+2020-11-11,Maunabo,0,0
+2020-11-11,Mayagüez,5,1.1
+2020-11-11,Moca,4,0.9
+2020-11-11,Morovis,2,0.4
+2020-11-11,Naguabo,7,1.5
+2020-11-11,Naranjito,0,0
+2020-11-11,Orocovis,0,0
+2020-11-11,Patillas,1,0.2
+2020-11-11,Peñuelas,1,0.2
+2020-11-11,Ponce,4,0.9
+2020-11-11,Quebradillas,12,2.6
+2020-11-11,Rincón,0,0
+2020-11-11,Río Grande,4,0.9
+2020-11-11,Sabana Grande,1,0.2
+2020-11-11,Salinas,0,0
+2020-11-11,San Germán,1,0.2
+2020-11-11,San Juan,59,12.9
+2020-11-11,San Lorenzo,2,0.4
+2020-11-11,San Sebastián,1,0.2
+2020-11-11,Santa Isabel,0,0
+2020-11-11,Toa Alta,5,1.1
+2020-11-11,Toa Baja,22,4.8
+2020-11-11,Trujillo Alto,7,1.5
+2020-11-11,Utuado,0,0
+2020-11-11,Vega Alta,4,0.9
+2020-11-11,Vega Baja,2,0.4
+2020-11-11,Vieques,0,0
+2020-11-11,Villalba,14,3.1
+2020-11-11,Yabucoa,1,0.2
+2020-11-11,Yauco,1,0.2
+2020-11-11,Otro lugar fuera de PR,1,
+2020-11-11,No disponible,24,
+2020-11-11,Total,484,
+2020-11-12,Adjuntas,0,0.0
+2020-11-12,Aguada,1,0.2
+2020-11-12,Aguadilla,3,0.6
+2020-11-12,Aguas Buenas,4,0.8
+2020-11-12,Aibonito,3,0.6
+2020-11-12,Añasco,10,1.9
+2020-11-12,Arecibo,2,0.4
+2020-11-12,Arroyo,1,0.2
+2020-11-12,Barceloneta,0,0.0
+2020-11-12,Barranquitas,1,0.2
+2020-11-12,Bayamón,47,9.1
+2020-11-12,Cabo Rojo,8,1.5
+2020-11-12,Caguas,62,12.0
+2020-11-12,Camuy,1,0.2
+2020-11-12,Canóvanas,4,0.8
+2020-11-12,Carolina,38,7.3
+2020-11-12,Cataño,12,2.3
+2020-11-12,Cayey,3,0.6
+2020-11-12,Ceiba,0,0.0
+2020-11-12,Ciales,0,0.0
+2020-11-12,Cidra,2,0.4
+2020-11-12,Coamo,10,1.9
+2020-11-12,Comerío,0,0.0
+2020-11-12,Corozal,1,0.2
+2020-11-12,Culebra,0,0.0
+2020-11-12,Dorado,1,0.2
+2020-11-12,Fajardo,5,1.0
+2020-11-12,Florida,0,0.0
+2020-11-12,Guánica,0,0.0
+2020-11-12,Guayama,5,1.0
+2020-11-12,Guayanilla,4,0.8
+2020-11-12,Guaynabo,23,4.4
+2020-11-12,Gurabo,16,3.1
+2020-11-12,Hatillo,2,0.4
+2020-11-12,Hormigueros,8,1.5
+2020-11-12,Humacao,6,1.2
+2020-11-12,Isabela,23,4.4
+2020-11-12,Jayuya,0,0.0
+2020-11-12,Juana Díaz,4,0.8
+2020-11-12,Juncos,20,3.9
+2020-11-12,Lajas,0,0.0
+2020-11-12,Lares,0,0.0
+2020-11-12,Las Marías,2,0.4
+2020-11-12,Las Piedras,3,0.6
+2020-11-12,Loíza,14,2.7
+2020-11-12,Luquillo,0,0.0
+2020-11-12,Manatí,0,0.0
+2020-11-12,Maricao,0,0.0
+2020-11-12,Maunabo,0,0.0
+2020-11-12,Mayagüez,5,1.0
+2020-11-12,Moca,4,0.8
+2020-11-12,Morovis,2,0.4
+2020-11-12,Naguabo,7,1.4
+2020-11-12,Naranjito,0,0.0
+2020-11-12,Orocovis,1,0.2
+2020-11-12,Patillas,1,0.2
+2020-11-12,Peñuelas,1,0.2
+2020-11-12,Ponce,4,0.8
+2020-11-12,Quebradillas,11,2.1
+2020-11-12,Rincón,0,0.0
+2020-11-12,Río Grande,3,0.6
+2020-11-12,Sabana Grande,2,0.4
+2020-11-12,Salinas,2,0.4
+2020-11-12,San Germán,1,0.2
+2020-11-12,San Juan,64,12.4
+2020-11-12,San Lorenzo,3,0.6
+2020-11-12,San Sebastián,1,0.2
+2020-11-12,Santa Isabel,1,0.2
+2020-11-12,Toa Alta,5,1.0
+2020-11-12,Toa Baja,21,4.1
+2020-11-12,Trujillo Alto,10,1.9
+2020-11-12,Utuado,0,0.0
+2020-11-12,Vega Alta,3,0.6
+2020-11-12,Vega Baja,2,0.4
+2020-11-12,Vieques,0,0.0
+2020-11-12,Villalba,12,2.3
+2020-11-12,Yabucoa,1,0.2
+2020-11-12,Yauco,2,0.4
+2020-11-12,Otro lugar fuera de PR,1,
+2020-11-12,No disponible,26,
+2020-11-12,Total,545,
+2020-11-13,Adjuntas,0,0.0
+2020-11-13,Aguada,1,0.2
+2020-11-13,Aguadilla,3,0.5
+2020-11-13,Aguas Buenas,4,0.7
+2020-11-13,Aibonito,3,0.5
+2020-11-13,Añasco,10,1.8
+2020-11-13,Arecibo,3,0.5
+2020-11-13,Arroyo,1,0.2
+2020-11-13,Barceloneta,2,0.4
+2020-11-13,Barranquitas,1,0.2
+2020-11-13,Bayamón,50,8.8
+2020-11-13,Cabo Rojo,9,1.6
+2020-11-13,Caguas,60,10.5
+2020-11-13,Camuy,1,0.2
+2020-11-13,Canóvanas,4,0.7
+2020-11-13,Carolina,48,8.4
+2020-11-13,Cataño,12,2.1
+2020-11-13,Cayey,4,0.7
+2020-11-13,Ceiba,0,0.0
+2020-11-13,Ciales,0,0.0
+2020-11-13,Cidra,2,0.4
+2020-11-13,Coamo,11,1.9
+2020-11-13,Comerío,0,0.0
+2020-11-13,Corozal,1,0.2
+2020-11-13,Culebra,0,0.0
+2020-11-13,Dorado,1,0.2
+2020-11-13,Fajardo,4,0.7
+2020-11-13,Florida,1,0.2
+2020-11-13,Guánica,0,0.0
+2020-11-13,Guayama,5,0.9
+2020-11-13,Guayanilla,4,0.7
+2020-11-13,Guaynabo,23,4.0
+2020-11-13,Gurabo,16,2.8
+2020-11-13,Hatillo,2,0.4
+2020-11-13,Hormigueros,8,1.4
+2020-11-13,Humacao,14,2.5
+2020-11-13,Isabela,23,4.0
+2020-11-13,Jayuya,0,0.0
+2020-11-13,Juana Díaz,4,0.7
+2020-11-13,Juncos,27,4.7
+2020-11-13,Lajas,0,0.0
+2020-11-13,Lares,0,0.0
+2020-11-13,Las Marías,2,0.4
+2020-11-13,Las Piedras,12,2.1
+2020-11-13,Loíza,14,2.5
+2020-11-13,Luquillo,0,0.0
+2020-11-13,Manatí,0,0.0
+2020-11-13,Maricao,0,0.0
+2020-11-13,Maunabo,0,0.0
+2020-11-13,Mayagüez,4,0.7
+2020-11-13,Moca,4,0.7
+2020-11-13,Morovis,3,0.5
+2020-11-13,Naguabo,9,1.6
+2020-11-13,Naranjito,0,0.0
+2020-11-13,Orocovis,1,0.2
+2020-11-13,Patillas,1,0.2
+2020-11-13,Peñuelas,2,0.4
+2020-11-13,Ponce,4,0.7
+2020-11-13,Quebradillas,10,1.8
+2020-11-13,Rincón,0,0.0
+2020-11-13,Río Grande,5,0.9
+2020-11-13,Sabana Grande,2,0.4
+2020-11-13,Salinas,2,0.4
+2020-11-13,San Germán,1,0.2
+2020-11-13,San Juan,70,12.3
+2020-11-13,San Lorenzo,4,0.7
+2020-11-13,San Sebastián,1,0.2
+2020-11-13,Santa Isabel,3,0.5
+2020-11-13,Toa Alta,5,0.9
+2020-11-13,Toa Baja,20,3.5
+2020-11-13,Trujillo Alto,10,1.8
+2020-11-13,Utuado,0,0.0
+2020-11-13,Vega Alta,3,0.5
+2020-11-13,Vega Baja,3,0.5
+2020-11-13,Vieques,0,0.0
+2020-11-13,Villalba,11,1.9
+2020-11-13,Yabucoa,1,0.2
+2020-11-13,Yauco,2,0.4
+2020-11-13,Otro lugar fuera de PR,1,
+2020-11-13,No disponible,26,
+2020-11-13,Total,598,
