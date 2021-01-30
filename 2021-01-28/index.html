@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@midnucas">
+<meta name="twitter:creator" content="@midnucas">
+<meta name="twitter:title" content="Análisis COVID-19 Puerto Rico — 2021-01-28">
+<meta name="twitter:description"
+      content="Análisis de rezagos de pruebas a partir de los boletines de COVID-19 del Departamento de Salud de Puerto Rico.">
+<meta name="twitter:image"
+      content="https://sacundim.github.io/covid-19-puerto-rico/2021-01-28/2021-01-28_Lateness7Day.png">
+
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>Análisis boletín 2021-01-28</title>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">covid-19-puerto-rico</a>
+      <button class="navbar-toggler"
+              type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      2021-01-28
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      
+                      <a class="dropdown-item" href="../2021-01-28/">2021-01-28</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-27/">2021-01-27</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-26/">2021-01-26</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-25/">2021-01-25</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-24/">2021-01-24</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-23/">2021-01-23</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-22/">2021-01-22</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-21/">2021-01-21</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-20/">2021-01-20</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-19/">2021-01-19</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-18/">2021-01-18</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-17/">2021-01-17</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-16/">2021-01-16</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-15/">2021-01-15</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-14/">2021-01-14</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-13/">2021-01-13</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-12/">2021-01-12</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-11/">2021-01-11</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-10/">2021-01-10</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-09/">2021-01-09</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-08/">2021-01-08</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-07/">2021-01-07</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-06/">2021-01-06</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-05/">2021-01-05</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-04/">2021-01-04</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-03/">2021-01-03</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-02/">2021-01-02</a>
+                      
+                      <a class="dropdown-item" href="../2021-01-01/">2021-01-01</a>
+                      
+                      <a class="dropdown-item" href="../2020-12-31/">2020-12-31</a>
+                      
+                      <a class="dropdown-item" href="../2020-12-30/">2020-12-30</a>
+                      
+                      <a class="dropdown-item" href="../2020-12-29/">2020-12-29</a>
+                      
+                      <a class="dropdown-item" href="../2020-12-28/">2020-12-28</a>
+                      
+                  </div>
+              </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/sacundim/covid-19-puerto-rico">GitHub</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <script src="../js/vega-aux.js"></script>
+
+    <div class="page_content">
+        <div class="section" id="browserCompliance" style="display: none;">
+            <h1>Advertencia de compatibilidad</h1>
+
+            <p>Las visualizaciones de datos en esta página no son enteramente
+                compatibles con su navegador de web.  Como solución parcial,
+                he sustituído imágenes pregeneradas en un navegador que sí es
+                compatible, pero a costa de la experiencia óptima (e.g. mostrar
+                más detalle cuando apunta con el ratón a los datos).</p>
+
+            <p>Conocidos incompatibles:</p>
+            <ul>
+                <li>Safari en computadora (portatil o de escritorio)</li>
+                <li>Tabletas y teléfonos Apple (no importa cuál navegador)</li>
+            </ul>
+            <p>Conocidos compatibles:</p>
+            <ul>
+                <li>Chrome (en computadora)</li>
+                <li>Firefox (en computadora)</li>
+            </ul>
+
+            <p>La compatibilidad de otros navegadores se desconoce.</p>
+        </div>
+
+        <script type="text/javascript">
+            if (!testCompliance()) {
+                var warning = document.getElementById("browserCompliance");
+                warning.style.display = "block";
+            }
+        </script>
+
+
+        
+<script type="text/javascript">
+    const bulletin_date = "2021-01-28";
+</script>
+
+<div class="section">
+    <h1>COVID-19 en Puerto Rico, análisis 2021-01-28</h1>
+
+    <p><b>Advertencia:</b> Favor notar que esta página usa las fechas que aparecen
+        a la cabeza de los boletines del Departamento de Salud, pero estos suelen
+        publicarse la mañana del próximo día, y muchas bases de datos y fuentes
+        periodísticas reportan los mismos datos a base de la fecha de publicación.</p>
+
+    <ul>
+        <li><a href="#NewCases_section">Tendencia de casos nuevos por fecha de evento (promedios 7 días)</a></li>
+        <li><a href="#Hospitalizations_section">Historial de hospitalizaciones</a></li>
+        <li><a href="#CurrentDeltas_section">Cambio entre boletín actual y anterior</a></li>
+        <li><a href="#DailyDeltas_section">Cambios entre boletines recientes</a></li>
+        <li><a href="#LatenessDaily_section">Rezago de datos de cada boletín</a></li>
+        <li><a href="#Lateness7Day_section">Tendencia de rezago de datos</a></li>
+        <li><a href="#LatenessTiers_section">Rezago de casos por renglones</a></li>
+        <li><a href="#NewDailyTestsPerCapita_section">Pruebas per cápita (promedio 7 días)</a></li>
+        <li><a href="#NaivePositiveRate_section">Positividad (promedio 7 días)</a></li>
+        <li><a href="#ConfirmationsVsRejections_section">Casos confirmados vs. descartados</a></li>
+        <li><a href="#CaseFatalityRate_section">Tasa de letalidad (CFR) rezagada</a></li>
+        <li><a href="#CumulativeTestsVsCases_section">Pruebas vs. casos (acumulado)</a></li>
+        <li><a href="#MolecularCurrentDeltas_section">Pruebas añadidas a Bioportal</a></li>
+        <li><a href="#MolecularDailyDeltas_section">Historial de pruebas en Bioportal</a></li>
+        <li><a href="#MolecularLatenessTiers_section">Rezagos de resultados de pruebas moleculares</a></li>
+        <li><a href="#WeekdayBias_section">Tendencias por día de semana</a></li>
+        <li><a href="#AgeGroups_section">Casos por edad (per cápita, 7 días)</a></li>
+        <li><a href="#MunicipalMap_section">Mapas municipales de casos recientes</a></li>
+        <li><a href="#Municipal_section">Historial de casos por municipio (fecha de boletín)</a></li>
+        <li><a href="#ICUsByRegion_section">Historial de cuidado intensivo, regiones</a></li>
+        <li><a href="#ICUsByHospital_section">Historial de cuidado intensivo, hospitales individuales</a></li>
+        <li><a href="#ConsecutiveBulletinMismatch_section">Descuadre de encabezado de boletín</a></li>
+        <li><a href="#BulletinChartMismatch_section">Descuadre de boletín y gráficas</a></li>
+        <li><a href="#Revisions_section">Revisiones</a></li>
+        <li><a href="#Terminology_section">Terminología</a></li>
+        <li><a href="#Sources_section">Datos fuente para 2021-01-28</a></li>
+    </ul>
+</div>
+
+<div class="section" id="NewCases_section">
+    <h1>Tendencia de casos nuevos por fecha de evento (promedios 7 días)</h1>
+
+    <div id="NewCases"></div>
+    <script type="text/javascript">
+      embedChart('NewCases', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>La tendencia de los casos nuevos por prueba viral diagnóstica y las muertes,
+        vista por medio de:</p>
+
+    <ul>
+        <li>La fecha en que se tomó la muestra o se dio el fallecimiento (no
+            la fecha que se anunció el caso, como hacen muchos otros análisis);</li>
+        <li>Promedios en ventanas de siete días que terminan en dicha fecha.</li>
+    </ul>
+
+    <p>Las líneas sólidas representan los promedios de los 7 días que desembocan
+        en esa fecha.  Las entrecortadas representan los valores que se obtienen solo
+        con datos de 7 días antes de la fecha de este informe.</p>
+
+
+    <h3>Advertencia</h3>
+
+    <p>Caídas súbitas al final de cada línea lo más probable no son reales, si no que más
+        bien son artefactos de los rezagos—i.e., no han se han incorporado datos para esas
+        fechas.  Las líneas entrecortadas, que muestran cómo se veía la curva solo con datos
+        recibidos hace una semana, de hecho tienden a ilustrar esto.</p>
+
+
+    <h3>Oficial vs. Bioportal</h3>
+
+    <p>Se trazan dos curvas de casos, una (en azul) usando los casos confirmados y probables
+        tal se reportan en el boletín diario oficial del Departmento de Salud de Puerto Rico,
+        y la otra (en gris) a partir de datos descargados de Bioportal, el sistema de
+        reporte de datos de pruebas del Departmento de Salud de Puerto Rico.</p>
+
+    <p>Hay que entender que:</p>
+
+    <ul>
+        <li>El reporte oficial siempre tiene números un tanto más bajos que Bioportal, que
+            a mi entender se debe a que el oficial hace un análisis más cuidadoso para
+            identificar y restar casos duplicados;</li>
+        <li>Bioportal siempre tiene datos más al día que el reporte oficial, por varios
+            días.</li>
+    </ul>
+
+    <p>Por eso recomiendo <strong>usar la curva oficial como la más autoritativa</strong>, y
+        la de Biorpotal como un indicador temprano de la dirección de la oficial en los
+        próximos días.</p>
+
+
+    <h3>Casos descartados</h3>
+
+    <p>Esta curva muestra el volumen de casos que:</p>
+
+    <ul>
+        <li>Tuvieron una prueba molcular negativa por muestra de esa fecha;</li>
+        <li>No son pruebas de seguimiento a caso ya conocido, según mi análisis
+            a partir de datos de Bioportal.</li>
+    </ul>
+
+    <p>Como prueba de seguimiento cuento toda esta que se realice a la misma persona dentro
+        de un periodo de 90 días luego que esta tuviera una prueba molecular positiva.  La
+        idea de descartar estas de esta curva es que las pruebas de seguimiento no ayudan
+        a descartar potenciales casos nuevos.</p>
+
+    <p>Vale también apuntar que al momento no cuento negativos en prueba de antígenos como
+        caso descartado, debido a la sensibilidad mucho menor de estas y la consecuente
+        práctica común de confirmar negativos por antígeno con molecular.</p>
+</div>
+
+
+<div class="section" id="Hospitalizations_section">
+    <h1>Historial de hospitalizaciones</h1>
+
+    <div id="HospitalizationsCovid19Tracking"></div>
+    <script type="text/javascript">
+      embedChart('HospitalizationsCovid19Tracking', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Promedio de 7 días de cuántos pacientes han estado hospitalizados por COVID-19. Datos
+        del API del <a href="https://covidtracking.com/">COVID Tracking Project</a>, que
+        a su vez son capturas diarias de páginas del Departamento de Salud de Puerto Rico.</p>
+</div>
+
+
+<div class="section" id="CurrentDeltas_section">
+    <h1>Cambio entre boletín actual y anterior</h1>
+
+    <div id="CurrentDeltas" class="chart"></div>
+    <script type="text/javascript" class="chart">
+      embedChart('CurrentDeltas', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Una gráfica que muestra, para los dos boletines más recientes, los
+        resultados de tomar los números de sus gráficas como esta:</p>
+
+    <figure>
+        <img class="figure_chart" src="../source_material/2021-01/2021-01-28/2021-01-28_confirmed.jpg">
+        <figcaption>Fuente: Departamento de Salud de Puerto Rico</figcaption>
+    </figure>
+
+    <p>...y restarle sus contrapartes del boletín anterior:</p>
+
+    <figure>
+        <img class="figure_chart" src="../source_material/2021-01/2021-01-27/2021-01-27_confirmed.jpg">
+        <figcaption>Fuente: Departamento de Salud de Puerto Rico</figcaption>
+    </figure>
+
+    <p>Esto nos da un desglose aproximado, para el nuevo boletín, de a qué fecha se le
+        atribuyeron los casos nuevos que reporta este.</p>
+
+    <p>Hay que notar que frecuentemente se ven fechas que salen números negativos.
+        La información que brinda el Departamento de Salud de Puerto Rico no deja claro
+        qué motiva esto en cada caso; algunas posibilidades podrían ser:</p>
+
+    <ul>
+        <li>Casos probables que luego se recibió resultado confirmatoria (positiva o negativa);</li>
+        <li>Llegada de resultado positivo más antiguo para la misma persona;</li>
+        <li>Corrección de errores clericales en los récords.</li>
+    </ul>
+
+    <p>La existencia de números negativos también complica la interpretación de este
+        modo: las fechas que dan positivos no sabemos si hubo resta de casos.  Una
+        fecha que diga que un boletín la subió por siete casos bien pudiera ser que
+        se registraron 8 casos nuevos y se restó uno.</p>
+</div>
+
+<div class="section" id="DailyDeltas_section">
+    <h1>Cambios entre boletines recientes</h1>
+
+    <div id="DailyDeltas" class="chart"></div>
+    <script type="text/javascript" class="chart">
+      embedChart('DailyDeltas', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>El mismo análisis que la gráfica anterior, pero para los 14 boletines
+        más recientes, cosa que require hacer los númeritos bien chiquititos.</p>
+</div>
+
+
+<div class="section" id="LatenessDaily_section">
+    <h1>Rezago de datos de cada boletín</h1>
+
+    <div id="LatenessDaily" class="chart"></div>
+    <script type="text/javascript">
+      embedChart('LatenessDaily', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Un estimado, para los boletines más recientes, de cuánto tiempo
+        atrás en promedio se tomaron las muestras que añade y las muertes
+        que reporta.</p>
+
+    <p>Este estimado se elabora a partir de los datos arriba de los cambios
+        entre boletines consecutivos. Por el asunto de los números negativos
+        en esos datos, no se puede esperar que estos rezagos estimados
+        sean los valores exactos que calcularíamos si tuvieramos mejor datos.</p>
+
+    <h3>Revisiones</h3>
+
+    <ul>
+        <li><a href="#Revisions_2020-07-03">3 de julio del 2020</a></li>
+        <li><a href="#Revisions_2020-06-05">5 de junio del 2020</a></li>
+    </ul>
+</div>
+
+
+<div class="section" id="Lateness7Day_section">
+    <h1>Tendencia de rezago de datos</h1>
+
+    <div id="Lateness7Day" class="chart"></div>
+    <script type="text/javascript">
+      embedChart('Lateness7Day', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Un estimado de rezagos similar al anterior, pero en vez de evaluar
+        los casos de cada boletín aparte, se agrupan en ventanas rodantes
+        de siete días.  O sea, la cifra que se reporta para cada fecha de
+        boletín abarca no solo los casos nuevos reportados en ese boletín,
+        sino también los seis días anteriores.</p>
+
+    <p>El ancho de ventana se fijó en siete días para eliminar los ciclos
+        semanales que son evidentes en los datos de fuente, como se aprecia
+        fácil en esta gráfica del boletín:</p>
+
+    <figure>
+        <img class="figure_chart" src="../source_material/2021-01/2021-01-28/2021-01-28_confirmed.jpg">
+        <figcaption>Fuente: Departamento de Salud de Puerto Rico</figcaption>
+    </figure>
+
+    <p>Las fechas como el 18, 19, 25 y 26 de abril, que reportan bien pocos
+        casos, es que son fines de semana.</p>
+
+    <p>Vale añadir que de los ocho puntos que muestran estas líneas, solo el
+        primero y el último son estadísticamente independientes.  Por ejemplo
+        la cifra más reciente y la anterior son calculadas a partir de ventanas
+        de siete días que coinciden en seis de estos.</p>
+
+    <h3>Revisiones</h3>
+
+    <ul>
+        <li><a href="#Revisions_2020-07-03">3 de julio del 2020</a></li>
+        <li><a href="#Revisions_2020-06-05">5 de junio del 2020</a></li>
+    </ul>
+</div>
+
+
+<div class="section" id="LatenessTiers_section">
+    <h1>Rezago de casos por renglones</h1>
+
+    <div id="LatenessTiers" class="chart"></div>
+    <script type="text/javascript">
+      embedChart('LatenessTiers', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Una gráfica de dos paneles que muestra promedios de siete días de casos confirmados
+        nuevos, por fecha de boletín (¡no de muestra!), divididos en renglones de rezago
+        (tiempo entre toma de muestra e incorporación en el conteo).  El panel superior muestra
+        los volúmenes absolutos; el panel inferior es los mismos datos, pero en porcentajes.</p>
+
+    <p>La forma de la curva superior se parece una gráfica de casos nuevos por fecha que se
+        incorporan al conteo, pero <strong>alerta</strong>, no cuenta muchas <em>restas</em> de
+        casos al conteo (porque las restas dañan los estimados de rezagos, hacen que den negativo).
+        Por esto la curva es en realidad más alta que los números verdaderos de casos confirmados.</p>
+</div>
+
+
+<div class="section" id="NewDailyTestsPerCapita_section">
+    <h1>Pruebas per cápita (promedio 7 días)</h1>
+
+    <div id="NewDailyTestsPerCapita"></div>
+    <script type="text/javascript">
+        embedChart('NewDailyTestsPerCapita', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Cuántas pruebas diarias (promedio de 7 días) se realizaron por millar de población,
+        tanto por fecha de toma de muestra como fecha de "reporte" (<code>reportedDate</code>,
+        que se entiende la fecha en que el laboratorio obtuvo el resultado).  Las líneas sólidas
+        son con datos hasta la fecha de este boletín; las líneas entrecortadas son con datos solo
+        hasta siete días antes de dicha fecha. Se presenta una gráfica de
+        <a href="https://ourworldindata.org/">Our World in Data</a> para comparación.</p>
+
+    <h3>Advertencia</h3>
+
+    <p>Las curvas no son finales porque pueden aún recibirse más datos para las fechas que
+        representan. Y especialmente, <b>caídas súbitas al final de la curva muy probable no son
+            reales</b>. La línea entrecortada, que excluye los datos recibidos los 7 días más
+        recientes, tiende a ilustrar este efecto.</p>
+
+    <h3>Comparación internacional</h3>
+
+    <p>Esta gráfica de <a href="https://ourworldindata.org/">Our World in Data</a> puede
+        ayudar a poner estas cifras en contexto internacional:</p>
+
+    <div class="chart">
+        <iframe src="https://ourworldindata.org/grapher/daily-tests-per-thousand-people-smoothed-7-day?tab=map&year=2021-01-28&time=2020-03-15..2021-01-28"
+                loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+    </div>
+
+    <h3>Revisiones</h3>
+
+    <ul>
+        <li>El cálculo de las líneas entrecortadas se ve afectado por la
+            <a href="#Revisions_2020-11-14">revisión del 14 de noviembre del 2020</a> y
+            otras anteriores.</li>
+    </ul>
+</div>
+
+
+<div class="section" id="NaivePositiveRate_section">
+    <h1>Positividad sencilla (promedio 7 días)</h1>
+
+    <div id="NaivePositiveRate"></div>
+    <script type="text/javascript">
+        embedChart('NaivePositiveRate', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Tasas de positividad por fecha de toma de muestra, según datos del API de Bioportal del
+        Departamento de Salud de Puerto Rico y del boletín diario de casos. Las líneas sólidas son
+        con datos recibidos hasta la fecha de boletín de este dashboard.  Las líneas entrecortadas
+        excluyen los datos recibidos durante las 7 fechas de boletín más recientes, a fin de ilustrar
+        cómo los datos recibidos recientes revisan fechas más viejas.</p>
+
+    <p>Se calcula aquí la tasa de positividad de dos maneras distintas:</p>
+
+    <ol>
+        <li>Número de pruebas positivas dividido entre número total de pruebas;</li>
+        <li>Número de casos confirmados únicos (tomado de los informes regulares de Salud)
+            dividido entre número total de pruebas PCR.</li>
+    </ol>
+
+    <p>La segunda de estas muchos entienden (con poca razón a mi entender) que es una división un
+        poco de "chinas con botellas" (i.e., cantidades que en realidad no deberían compararse),
+        pero he optado por incluirla porque muchas colecciones de datos en EEUU (e.g., Johns
+        Hopkins) e internacionales (e.g., Our World In Data) calculan así o parecido para muchos
+        locales.  Lo cual quiere decir que a la hora de comparar el dato de Puerto Rico con el de
+        otro país hay que tener cuidado cuál definición se habla.  Más generalmente, <strong>no
+            existe ningún consenso sobre cómo calcular positividad, así que mucho cuidado con
+            comparar las cifras que ofrecen fuentes distintas</strong>.</p>
+
+
+    <h3>Pruebas de antígenos</h3>
+
+    <p>Se calcula aquí también una tasa de positividad de pruebas de antígenos, aparte de las
+        de moleculares. Hay que entender que la positividad de antígenos no puede compararse
+        ingenuamente con la de moleculares. Las pruebas moleculares son más sensibles y tienen
+        una ventana de detección más amplia, por lo tanto la expectativa de antemano es que:</p>
+
+    <center>
+        positividad moleculares > positividad antígenos
+    </center>
+
+    <p>Y encima de esto las moleculares vs. las de antígenos se administran a grupos de la
+        población sesgados de manera distinta, que dificulta aún más la comparación.</p>
+
+
+    <h3>Datos incompletos</h3>
+
+    <p>Otra advertencia es que el cálculo dado aquí para Puerto Rico hace uso de datos por
+        fecha de toma de muestra, y no de registro de resultados como hacen muchas colecciones
+        de datos o informes.  Esto da números que reflejan la realidad más cercanamente, pero
+        acarrea dos desventajas:</p>
+
+    <ol>
+        <li>Las cifras dadas para cualquier fecha no son finales, porque mañana pueden recibirse
+            nuevos resultados de muestras tomadas en esas mismas fechas, y que llevarán
+            a que se revisen los valores aquí calculados;</li>
+        <li>Un caso especial muy importante de esto es que <b>caídas o subidas repentinas al final
+            de la curva no son fiables</b>, porque para las fechas más recientes se espera que se
+            los datos estén menos completos.</li>
+    </ol>
+
+    <p>Las líneas entrecortadas, cuyo cálculo excluye los datos recibidos en los 7 días más
+        recientes, tienden a ilustrar estos efectos.</p>
+
+
+    <h3>Comparación internacional</h3>
+
+    <p>Esta gráfica de <a href="https://ourworldindata.org/">Our World in Data</a> puede
+        ayudar a poner estas cifras en contexto internacional:</p>
+
+    <div class="chart">
+        <iframe src="https://ourworldindata.org/grapher/positive-rate-daily-smoothed?tab=map&year=2021-01-28&time=2020-03-15..2021-01-28"
+                loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+    </div>
+
+    <h3>Revisiones</h3>
+
+    <ul>
+        <li>El cálculo de las líneas entrecortadas se ve afectado por la
+            <a href="#Revisions_2020-11-14">revisión del 14 de noviembre del 2020</a> y
+            otras anteriores.</li>
+    </ul>
+</div>
+
+
+<div class="section" id="ConfirmationsVsRejections_section">
+    <h1>Casos confirmados vs. descartados</h1>
+
+    <div id="ConfirmationsVsRejections"></div>
+    <script type="text/javascript">
+        embedChart('ConfirmationsVsRejections', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Lo que el autor de esta página entiende es una mejor manera de medir la tan mentada
+        "positividad de pruebas" a partir de los datos disponibles del Departamento de
+        Salud de Puerto Rico.  El concepto consiste en distinguir entre pruebas de:</p>
+
+    <ul>
+        <li><strong>Evaluación inicial</strong>, que se administran a pacientes que no
+            se sabe si tienen o no COVID-19 para confirmar o descartar esa hipótesis;</li>
+        <li><strong>Seguimiento</strong>, que se administran a pacientes que ya se ha
+            confirmado que tienen COVID-19 para darle seguimiento a sus casos.</li>
+    </ul>
+
+    <p>La idea es monitorear la razón de casos descartados a casos confirmados pero <strong>solo
+        contando pruebas de evaluación inicial</strong>, porque las de seguimiento no aportan al
+        propósito que se cita comunmente para las tasas de positividad: evaluar si el volumen de
+        pruebas se queda corto para detectar contagios nuevos.  Como las pruebas de seguimiento no
+        contribuyen a confirmar o descartar nuevos casos, incluirlas en el cálculo de tasas de
+        positividad es (entiendo yo) un defecto común en los métodos más usuales para calcular
+        positividad.</p>
+
+    <p>Este autor favorecería expresar este concepto como la razón de casos descartados a
+        confirmados, e.g., 95 casos descartados por cada 5 confirmados, pero como el "porcentaje
+        de positividad" anda tan difundido, me he conformado por así expresarlo, mediante la
+        fórmula:</p>
+
+    <center>
+        positividad = confirmados / (confirmados + descartados)
+    </center>
+
+    <p>...que en el ejemplo dado sería 5 / (5 + 95) = 5%.  La unidad del numerador y el
+        denominador se entiende que es episodios evaluados para confirmar o descartar
+        si hay infección de COVID-19.</p>
+
+    <p>El valor para cada fecha en el eje horizontal es un promedio a partir de las
+        muestras tomadas en los 7 días que desembocan en esa fecha.</p>
+
+
+    <h3>Criterio para prueba inicial vs. seguimiento</h3>
+
+    <p>Catalogamos una prueba (negativa o positiva) como seguimiento si el mismo paciente
+        (según el campo <code>patientId</code> en Bioportal) ha tenido una prueba positiva
+        en los 90 días anteriores.  Este criterio lo adoptamos a partir de
+        <a href="https://wwwn.cdc.gov/nndss/conditions/coronavirus-disease-2019-covid-19/case-definition/2020/08/05/">la
+            definición interina de casos de COVID-19 del 5 de agosto del 2020 del Consejo de
+            Epidemiólogos Estatales y Territoriales</a>, que recomienda:</p>
+
+    <blockquote>
+        Una prueba positiva repetida para ARN de SARS-CoV-2 usando una prueba de detección de
+        amplificación molecular dentro de tres meses del reporte inicial no debe ser enumerada
+        como caso nuevo para propósitos de vigilancia.
+    </blockquote>
+
+    <p><strong>ADVERTENCIA:</strong> Este estimado usa el campo <code>patientId</code> de
+        Bioportal para adjudicar si un par de pruebas se le hicieron al mismo paciente, y
+        hay motivo para creer que este campo frecuentemente falla en lograr ese cometido
+        y muestre IDs distintos en muchos casos que en verdad es la misma persona.  El efecto
+        de esto sería subestimar qué cantidad de pruebas son de seguimiento.</p>
+
+
+    <h3>Bioportal vs. oficial</h3>
+
+    <p>Para el numerador de casos confirmados existen en los datos de Salud dos cifras
+        discrepantes que se pueden usar, y hemos optado por visualizar ambas:</p>
+
+    <ul>
+        <li>El número de pruebas iniciales positivas según los datos del API de Bioportal
+            del Departamento de Salud de Puerto Rico;</li>
+        <li>El número de casos confirmados según los boletines oficiales diarios del
+            Departamento de Salud.</li>
+    </ul>
+
+    <p>La segunda de estas es la cifra oficial, pero también la más baja.  No tengo información
+        firme que explique esta discrepancia pero mi conjetura provisional es que la cifra oficial
+        disfruta de análisis más cuidadoso para identificar pacientes duplicados que lo que
+        se expone en el campo de <code>patientId</code> en Bioportal.</p>
+</div>
+
+
+<div class="section" id="CaseFatalityRate_section">
+    <h1>Tasa de letalidad (CFR) rezagada</h1>
+
+    <div id="CaseFatalityRate"></div>
+    <script type="text/javascript">
+        embedChart('CaseFatalityRate', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Aproximación de qué porcentaje de los casos <b>detectados</b> (que no son todos los
+        contagios) resultaron en decesos, lo que en inglés se llama el "case fatality rate"
+        (CFR). Esto sin embargo lo calculamos de una manera más cuidadosa que lo usual,
+        comparando muertes (por fecha actual de deceso, ventanas móbiles de 14 días) con
+        casos detectados por muestras 16 días atrás. Esto responde a los siguientes
+        supuestos:</p>
+
+    <ol>
+        <li>Tiempo típico entre contagio y deceso es de 23 días;</li>
+        <li>Tiempo típico entre contagio y síntomas es de 5 días;</li>
+        <li>Tiempo típico entre síntomas y toma de muestra es de 2 días.
+            (Esto es pura adivinanza de mi parte.)</li>
+    </ol>
+
+    <p>Esta tasa no es la letalidad verdadera del virus, porque no toma en cuenta casos que
+        no se detectaron.  Esto quiere decir que si se contempla en conjunto con un estimado
+        de la letalidad verdadera ("infection fatality rate" (IFR) en inglés), sirve para
+        estimar qué porciento de los contagios verdaderos se detecta, según esta fórmula:</p>
+
+    <center>
+        % detectados = IFR / CFR
+    </center>
+
+    <p>Los <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/planning-scenarios.html">estimados
+        de los CDC de los EEUU</a> (revisión 10 de septiembre), ajustados a la edad de la población de
+        Puerto Rico, pondrían el IFR del país cerca del 1%, así que un CFR por ejemplo de 1.5% en esta
+        gráfica implicaría entonces que para esas fechas se detectaba como el 67% de los contagios.
+        Existen otros estudios con otros estimados que he consultado, que ajustados a la población de
+        Puerto Rico predicen diversos IFRs entre 1% a 1.8%.  Nótese que usar estimados más bajos de IFR
+        produce estimados más altos de casos sin detectar; optimismo respecto a IFR = pesimismo respecto
+        a detección.</p>
+</div>
+
+
+<div class="section" id="CumulativeTestsVsCases_section">
+    <h1>Pruebas vs. casos (acumulado)</h1>
+
+    <div id="CumulativeTestsVsCases"></div>
+    <script type="text/javascript">
+        embedChart('CumulativeTestsVsCases', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Otra forma de visualizar la positividad: trazando el número de pruebas moleculares
+        acumuladas en el eje vertical y los casos confirmados acumulados en el horizontal.
+        Las líneas entrecortadas brindan una referencia de cómo se traduce a positividad
+        acumulada (que vale advertir, no es lo mismo que positividad promedio de 7 días).</p>
+
+    <p>Curvas que se mueven hacia arriba son buenas; curvas que se mueven a la derecha son
+        malas. Giros súbitos justo al final de la curva no son fiables porque probablemente
+        representan fechas para las cuales solo hay datos parciales.</p>
+
+    <p>Ventaja de esta gráfica: te muestra las pruebas y casos per cápita acumulados
+        actuales de manera bien compacta, y la evolución de la positividad acumulada.
+        Desventaja: no tiene eje de tiempo como tal, aunque como son cifras acumuladas
+        puntos más arriba o a la derecha son generalmente más tardíos.</p>
+
+
+    <h3>Comparaciones internacionales</h3>
+
+    <p>Estas gráficas de <a href="https://ourworldindata.org/">Our World in Data</a> puede
+        ayudar a poner estas cifras en contexto internacional:</p>
+
+    <div class="chart">
+        <iframe src="https://ourworldindata.org/grapher/covid-19-positive-rate-bar?tab=map&year=2021-01-28&time=2020-03-15..2021-01-28"
+                loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+    </div>
+
+    <div class="chart">
+    <iframe src="https://ourworldindata.org/grapher/full-list-cumulative-total-tests-per-thousand-map?year=2021-01-28&time=2020-03-15..2021-01-28"
+            loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+    </div>
+
+    <div class="chart">
+        <iframe src="https://ourworldindata.org/grapher/covid-19-tests-vs-cases-per-million-positivity-comparisons?xScale=linear&yScale=linear&time=2020-03-15..2021-01-29"
+                loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+    </div>
+</div>
+
+
+<div class="section" id="MolecularCurrentDeltas_section">
+    <h1>Pruebas añadidas a Bioportal</h1>
+
+    <div id="MolecularCurrentDeltas"></div>
+    <script type="text/javascript">
+        embedChart('MolecularCurrentDeltas', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Cuántos resultados nuevos de pruebas moleculares se añadieron en el API de Bioportal
+        (el sistema en línea de recibo de resultados de pruebas del Departamento de Salud de
+        Puerto Rico), por combinación de fecha de toma de muestra y fecha que Bioportal reporta
+        recepción del resultado de la prueba.</p>
+
+    <p>El API de Bioportal de Salud que usa esta página presenta tres campos de fecha/tiempo
+        para cada récord de prueba individual:</p>
+
+    <dl>
+        <dt><code>collectedDate</code></dt>
+        <dd>Fecha de colección de muestra de prueba.</dd>
+
+        <dt><code>reportedDate</code></dt>
+        <dd>Se entiende a partir de conversaciones con fuentes que es la fecha en que el
+            laboratorio advino en conocimiento del resultado de la prueba.</dd>
+
+        <dt><code>resultCreatedAt</code></dt>
+        <dd>Tiempo que el sistema computarizado graba como la fecha y hora que se
+            recibió el resultado de la prueba.</dd>
+    </dl>
+
+    <p>Aún con todo esto, muchos récords de pruebas moleculares sin embargo muestran un
+        <code>collectedDate</code> más tardío que su <code>reportedDate</code>, y en este
+        caso se ha optado en imputarles que se recogieron 3 días antes que el <code>reportedDate</code>,
+        a partir de un análisis de la tardanza promedio en toda la base de datos.</p>
+
+    <h3>Revisiones</h3>
+
+    <ul>
+        <li>La adjudicación de pruebas a fechas de reporte, y por tanto los rezagos calculados,
+            se han visto fuertemente cambiados en varias ocasiones, más recientemente por la
+            <a href="#Revisions_2020-11-14">revisión del 14 de noviembre del 2020</a>.</li>
+    </ul>
+</div>
+
+
+<div class="section" id="MolecularDailyDeltas_section">
+    <h1>Historial de pruebas en Bioportal</h1>
+
+    <div id="MolecularDailyDeltas"></div>
+    <script type="text/javascript">
+        embedChart('MolecularDailyDeltas', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>El mismo análisis que la gráfica anterior, pero en forma de historial para muchas fechas
+        recientes.  Se puede apuntar a cada celda de la gráfica para que aparezca un indicador
+        con los valores de esta en tamaño legible.</p>
+
+    <h3>Revisiones</h3>
+
+    <ul>
+        <li>La adjudicación de pruebas a fechas de reporte, y por tanto los rezagos calculados,
+            se han visto fuertemente cambiados en varias ocasiones, más recientemente por la
+            <a href="#Revisions_2020-11-14">revisión del 14 de noviembre del 2020</a>.</li>
+    </ul>
+</div>
+
+
+<div class="section" id="MolecularLatenessTiers_section">
+    <h1>Rezagos de resultados de pruebas moleculares</h1>
+
+    <div id="MolecularLatenessTiers"></div>
+    <script type="text/javascript">
+        embedChart('MolecularLatenessTiers', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Promedios de siete días de rezagos estimados entre toma de muestra y aparición de récord
+        del resultado en Bioportal, agrupando los resultados por la fecha en que se recibieron.
+        El panel superior muestra los volúmenes absolutos; el panel inferior es los mismos datos,
+        pero en porcentajes.</p>
+
+    <h3>Revisiones</h3>
+
+    <ul>
+        <li>La adjudicación de pruebas a fechas de reporte, y por tanto los rezagos calculados,
+            se han visto fuertemente cambiados en varias ocasiones, más recientemente por la
+            <a href="#Revisions_2020-11-14">revisión del 14 de noviembre del 2020</a>.</li>
+    </ul>
+</div>
+
+
+<div class="section" id="WeekdayBias_section">
+    <h1>Tendencias por día de semana</h1>
+
+    <div id="WeekdayBias" class="chart"></div>
+    <script type="text/javascript">
+      embedChart('WeekdayBias', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Casos de los 21 boletines anteriores al actual, reportados con no más
+        de 14 días de rezago respecto a cada boletín, agrupados por la
+        combinación de:</p>
+
+    <ul>
+        <li>Día de la semana que se tomó la muestra (o falleció el paciente);</li>
+        <li>Día de la semana del boletín en que se añadió el caso.</li>
+    </ul>
+
+    <p>La intensidad del color de cada cuadro refleja cuántos casos se registraron
+        para esa combinación. Los histogramas marginales muestran los datos agrupados
+        por un sólo eje.</p>
+
+    <p><b>ADVERTENCIAS:</b></p>
+    <ul>
+        <li>Los boletines siempre salen la mañana del día posterior al que cuyos datos
+            reportan.  Así que los datos que esta gráfica atribuye, por ejemplo, a boletín
+            de martes, corresponden a anuncio de miércoles.</li>
+        <li>Esta gráfica no incorpora los datos del boletín actual, porque su
+            intención es contextualizar este respecto a la tendencia de los
+            21 boletines anteriores.</li>
+        <li>El análisis excluye casos reportados con más de 14 días de rezago, por
+            entenderse que estos reflejan eventos irregulares que tienden a confundir
+            verdaderos ciclos semanales.</li>
+        <li>Se excluyen también combinaciones que dan cero o negativo (que sí existen
+            si se consideran todos los datos). Tales combinaciones aparecen en blanco.</li>
+    </ul>
+</div>
+
+
+<div class="section" id="AgeGroups_section">
+    <h1>Casos por edad (per cápita, 7 días)</h1>
+
+    <div id="AgeGroups"></div>
+    <script type="text/javascript">
+      embedChart('AgeGroups', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Casos confirmados y probables reportados nuevos (por fecha de boletín), agrupados
+        por edad, promedio de 7 días, ajustado al estimado poblacional en cada grupo de edades.
+        Se usan datos del programa de estimados poblacionales del 2019 del Censo de los
+        Estados Unidos para ajustar las cifras a la población de cada edad.</p>
+</div>
+
+
+<div class="section" id="MunicipalMap_section">
+    <h1>Mapas municipales de casos recientes</h1>
+
+    <div id="MunicipalMap"></div>
+    <script type="text/javascript">
+      embedChart('MunicipalMap', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Casos confirmados y probables nuevos reportados por municipio, visto de cuatro
+        formas:</p>
+
+    <ol>
+        <li>Número de casos nuevos registrados en el boletín más reciente;</li>
+        <li>Número de casos nuevos registrados en los siete boletines más recientes;</li>
+        <li>Crecida del número de casos nuevos registrados en el boletín más reciente,
+            respecto a los casos registrados en los siete anteriores a este;</li>
+        <li>Crecida del número de casos nuevos registrados en los siete boletines más
+            recientes, respecto a los casos registrados en los siete anteriores a estos.</li>
+    </ol>
+
+    <p>La primera ayuda identificar dónde son los casos reportados en el nuevo boletín;
+        las demás a identificar municipios que pudieran haber experimentado brotes
+        recientemente.</p>
+
+    <p>Los tonos rojáceos indican valores positivos, y los grisáceos o negros valores
+        negativos, porque sí, a veces boletines posteriores le restan casos confirmados
+        a municipios. Cuando el denominador de las divisiones sería cero (porque no hay
+        casos recientes en el municipio) se sustituye por uno.</p>
+
+    <p>Nótese que esto es por fecha de boletín, no de muestra, y que por lo tanto
+        esta gráfica nos dice cuándo se detectaron los casos, no cuándo sucedieron.</p>
+</div>
+
+
+<div class="section" id="Municipal_section">
+    <h1>Historial de casos por municipio (fecha de boletín)</h1>
+
+    <p>Historial de números de casos confirmados y probables nuevos para cada municipio en
+        cada una de las 35 fechas más recientes, interpretándose estas como fecha de boletín.
+        Nótese que esto último quiere decir que esta gráfica no nos dice cuándo sucedieron los
+        casos, sino cuándo se añadieron al conteo.</p>
+
+    <p>Esto es una
+        <a href="https://flowingdata.com/2015/07/02/changing-price-of-food-items-and-horizon-graphs/">gráfica
+        de horizonte</a>, que hay que leer un poco al respecto para intepretar. Aquí se ha optado
+        por:</p>
+
+    <ul>
+        <li>Tonos rojos: valores positivos (más intenso, mayor el valor)</li>
+        <li>Tonos grises: valores negativos</li>
+        <li>Bandas de 0-6, 8-12 y 12-18</li>
+    </ul>
+
+    <div id="Municipal"></div>
+    <script type="text/javascript">
+      embedChart('Municipal', bulletin_date);
+    </script>
+</div>
+
+
+<div class="section" id="ICUsByRegion_section">
+    <h1>Historial de cuidado intensivo, regiones</h1>
+
+    <div id="ICUsByRegion"></div>
+    <script type="text/javascript">
+      embedChart('ICUsByRegion', bulletin_date);
+    </script>
+
+    <h2>¿Qué es esto?</h2>
+
+    <p>Una gráfica <b>imprecisa e incompleta</b> de promedios semanales de disponibilidad
+        y uso de camas de cuidado intensivo <em>de adultos</em>, según el
+        <a href="https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-facility">reporte
+            semanal del Departamento de Salud de los EEUU</a>. Hay que subrayar que este
+        informe tiene dos limitaciones serias que impiden tener un cuadro completo y
+        preciso:</p>
+
+    <ol>
+        <li>No incluye todos los hospitales en Puerto Rico (e.g., el de Veteranos);</li>
+        <li>Como medida de privacidad, suprime todos los valores que sean menos de 4.0
+            (pero retiene los que son 0.0).</li>
+    </ol>
+
+    <p>Por este motivo optamos por la medida pesimista de ilustrar el número de camas como el
+        mínimo que se puede deducir del informe, pero el máximo de ocupadas y pacientes de COVID
+        (sospechado o confirmado).  Dejando aparte el fallo obvio que esta gráfica no abarca todos
+        los hospitales, esto significa que aún para los que sí cubre, el número de camas que estimamos
+        a veces podría ser menor que el real (aunque casi nunca parece serlo), y nuestros números de
+        camas ocupadas y pacientes de COVID generalmente son mayores que los reales.</p>
+
+    <h2>Nota técnica</h2>
+
+    <p>El informe de Salud federal reporta tres cifras para cada elemento:</p>
+
+    <dl>
+        <dt><code>_7_day_coverage</code></dt>
+        <dd>Cuántos de los siete días de la semana en cuestión reportó el hospital
+            sus números;</dd>
+
+        <dt><code>_7_day_sum</code></dt>
+        <dd>Suma de los valores de todos los reportes de ese hospital en esa semana;</dd>
+
+        <dt><code>_7_day_avg</code></dt>
+        <dd>Promedio de esa semana, que con los récords no suprimidos se corrobora
+            que es <code>_7_day_sum / _7_day_coverage</code>.</dd>
+    </dl>
+
+    <p>Como la supresión de valores menores que 4 se aplica superficialmente tanto a
+        <code>_7_day_sum</code> como a <code>_7_day_avg</code>, se pueden reconstruir
+        muchísimos de los promedios suprimidos realizando la división uno mismo, y así
+        hacemos en esta visualización.  Cuando sí está suprimida la suma el promedio que
+        imputamos a ese hospital para esa semana cae siempre entre 4/7 y 4/1.</p>
+</div>
+
+
+<div class="section" id="ICUsByHospital_section">
+    <h1>Historial de cuidado intensivo, hospitales individuales</h1>
+
+    <p>Promedios de 7 días de disponibilidad de camas de cuidado intensivo <em>de adultos</em>,
+        y cuántas están ocupadas por pacientes de COVID-19 (sospechado o confirmado). Datos del
+        <a href="https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-facility">reporte
+            semanal del Departamento de Salud de los EEUU</a>. Como el informe federal suprime
+        algunos valores pequeños por privacidad, en esos casos imputamos el mínimo de camas
+        disponibles que sea compatible con los datos (que casi siempre es igual al máximo), pero
+        el máximo de ocupadas y COVID; ver las notas de <a href="#ICUsByRegion_section">nuestra
+            gráfica de cuidado intensivo por región</a>.</p>
+
+    <div id="ICUsByHospital"></div>
+    <script type="text/javascript">
+      embedChart('ICUsByHospital', bulletin_date);
+    </script>
+</div>
+
+
+<div class="section" id="ConsecutiveBulletinMismatch_section">
+    <h1>Descuadre de encabezado de boletín</h1>
+
+    <div id="ConsecutiveBulletinMismatch" class="chart"></div>
+    <script type="text/javascript" class="chart">
+      embedChart('ConsecutiveBulletinMismatch', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Cotejos de cifras reportadas en la primera página de cada boletín. Se compara:</p>
+    <ul>
+        <li>Para casos confirmados y probables, que cuadren el total reportado en el
+            boletín anterior con los casos nuevos, ajustes y total en el corriente;</li>
+        <li>Para las muertes, que cuadren la cifras de confirmadas y probables con
+            la de total.</li>
+    </ul>
+
+    <h3>Descuadres constatados en los datos de fuente</h3>
+    <dl>
+        <dt>2021-01-13</dt>
+        <dd>No cuadran los casos confirmados en la portada y las notas al calce. El total reportado
+            en la portada es 79,114, pero la suma llega a 79,112.</dd>
+
+        <dt>2021-01-11</dt>
+        <dd>Hoy de nuevo no cuadran los casos sospechosos en la portada y las notas al calce. El
+            total reportado en la portada es 60,006, pero la suma llega a 59,006. La gráfica de casos
+            sospechosos (que generalmente es lo más fiable) dice 60,006, como dice también la tabla
+            que la acompaña.  Esto puede en gran parte explicarse si apuntamos al descuadre de ayer
+            y suponemos que es que el total reportado ayer estaba mal por 100.</dd>
+
+        <dt>2021-01-10</dt>
+        <dd>Los casos sospechosos en la portada y las notas al calce no cuadran con el boletín
+            anterior. El total reportado en la portada hoy es 58,872, pero la suma llega a 58,988.
+            La gráfica de casos sospechosos (que generalmente es lo más fiable) dice 58,972.  La
+            tabla que la acompaña esta gráfica (que frecuentemente está mal) dice que suma a 55,381,
+            pero los números diarios en esta en verdad suman 58,725.  Esto es un desastre.</dd>
+
+        <dt>2021-01-01</dt>
+        <dd>Los casos sospechosos en la portada y las notas al calce no cuadran con el boletín
+            anterior. El total reportado en la portada y la gráfica hoy es 57,484, pero la suma
+            llega a 57,481.  Las notas al calce hablan de dos duplicados que se restaron y otro
+            más que se restó por "fecha equivocada," y no sé si tengan que ver.</dd>
+
+        <dt>2021-01-04</dt>
+        <dd>Tanto los casos probables y los sospechosos en la portada y las notas al calce no
+            cuadran con el boletín anterior. Los totales reportados en la portada y la gráfica
+            hoy son 4,861 y 57,221 respectivamente, pero las sumas de cuadre dan 4,862 y
+            57,220.  Las notas al calce mencionan un caso sospechoso que pasó a probable, y
+            podemos conjeturar que en los totales reportados se les olvidó traspasar este.</dd>
+
+        <dt>2021-01-01</dt>
+        <dd>Los casos sospechosos en la portada y las notas al calce no cuadran con el boletín
+            anterior. El total reportado en la portada y la gráfica hoy es 56,546, pero la suma
+            llega a 56,547.  Posiblemente eliminaron un duplicado que no mencionaron en la
+            nota al calce.</dd>
+
+        <dt>2020-12-19</dt>
+        <dd>Los casos sospechosos en la portada y las notas al calce no cuadran con el boletín
+            anterior. El total reportado hoy es 50,177, pero la suma solo llega a 50,139.</dd>
+
+        <dt>2020-12-16</dt>
+        <dd>Los casos confirmados en la portada y las notas al calce no cuadran con el boletín
+            anterior. El total reportado hoy es 64,182, pero la suma solo llega a 64,184.</dd>
+
+        <dt>2020-12-16</dt>
+        <dd>Los casos probables en la portada y las notas al calce no cuadran con el boletín
+            anterior. El total reportado hoy es 2,968, pero la suma solo alcanza a 2,967. La
+            tabla de casos probables por fecha de muestra, como se reporta abajo, también tiene
+            errores, que tras corregirlos también suman a 2,967.</dd>
+
+        <dt>2020-12-16</dt>
+        <dd>Los casos sospechosos en la portada y las notas al calce no cuadran con el boletín
+            anterior. El total reportado hoy es 47,546, pero la suma solo alcanza a 47,545. Una
+            nota al calce le resta un caso "reclasificado" a los confirmados sin más explicación;
+            conjeturo que este caso pasó a sospechoso y no lo desglosaron entre estos.</dd>
+
+        <dt>2020-12-11</dt>
+        <dd>La tabla de los casos probables por fecha de muestra la corrigieron después de
+            cuatro días que estuvo mal, pero hoy la portada y las notas al calce descuadran por
+            dos (2) casos probables.</dd>
+
+        <dt>2020-12-09</dt>
+        <dd>Otro boletín desastroso. La portada y las gráficas dicen 57,096 casos confirmados
+            y 44,667 sospechosos, pero los números de casos adicionales en la portada y las
+            notas al calce, aplicados a los totales acumulados hasta el boletín anterior, dan
+            57,102 y 44,670 respectivamente. Además de eso se da el tercer día consecutivo que
+            la tabla de casos probables está mal (ver el análisis de cuadre de gráficas abajo).</dd>
+
+        <dt>2020-11-29</dt>
+        <dd>Este boletín es un desastre. Dice en la portada que se sumaron 732 casos confirmados
+            adicionales recientes, se sumaron otros 5 más viejos y se restaron 23 duplicados.
+            Esto aplicado al total anterior de 50,197 casos confirmados daría 50,911, pero el
+            bendito boletín dice 50,988, igual que la gráfica.  Y los casos sospechosos tienen
+            un descuadre de 3.</dd>
+
+        <dt>2020-11-25 (confirmados)</dt>
+        <dd>El boletín dice en la portada que se sumaron 392 casos confirmados adicionales, y
+            la nota al calce #2 que se sumaron 118 casos confirmados por muestras anteriores al
+            10 de noviembre. Aplicando esto a los 47,345 acumulados hasta el boletín anterior
+            (24/nov) daría 47,345 + 392 + 118 = 47,855, pero el boletín nuevo (25/nov) dice en
+            su portada que son 47,854 casos confirmados.  La gráfica de casos confirmados por
+            fecha de muestra también dice 47,854.</dd>
+
+        <dt>2020-11-25 (sospechosos)</dt>
+        <dd>El boletín dice en la portada que se sumaron 211 casos sospechosos adicionales, y
+            la nota al calce #2 que se restaron 65 casos confirmados por muestras anteriores al
+            10 de noviembre, se restó 1 por muestra de antígeno anterior al 10 de noviembre, y se
+            sumó uno por muestra del 8/nov. Aplicando esto a los 39,266 acumulados hasta el boletín
+            anterior (24/nov) daría 39,266 + 211 - 61 - 1 + 1 = 39,416, pero el boletín nuevo (25/nov)
+            dice en su portada que son 39,409 casos confirmados.  La gráfica de casos confirmados por
+            fecha de muestra también dice 39,409.</dd>
+
+        <dt>2020-11-21 (confirmados)</dt>
+        <dd>El boletín dice en la portada que se sumaron 957 casos confirmados adicionales, y
+            la nota al calce #2 que se sumaron 11 casos confirmados por muestras anteriores al
+            6 de noviembre. Aplicando esto a los 45,268 acumulados hasta el boletín anterior
+            (20/nov) daría 45,268 + 957 + 11 = 46,236, pero el boletín nuevo (21/nov) dice en
+            su portada que son 46,235 casos confirmados.  La gráfica de casos confirmados por
+            fecha de muestra también dice 46,235.</dd>
+
+        <dt>2020-11-18 (probables)</dt>
+        <dd>El boletín dice en la portada que se sumaron 153 casos probables adicionales por
+            antígeno, y la nota al calce #4 que se restaron 5 que pasaron a confirmados por
+            prueba molecular posterior.  Aplicando esto a los 879 acumulados hasta el boletín
+            anterior (17/nov) daría 879 + 153 - 5 = 1,027, pero el boletín nuevo (18/nov) dice
+            en su portada que son 1,028 casos probables.  La gráfica de casos probables por fecha
+            de muestra también dice 1,028.</dd>
+
+        <dt>2020-11-13 (confirmados)</dt>
+        <dd>La nota al calce #1 dice que los casos confirmados adicionales para esta fecha comienzan
+            por muestras del 29 de octubre del 2020, y la gráfica en la nota dice que se suma un caso
+            por muestra de esa fecha.  Pero la nota al calce #2 dice también que se ajusta el total
+            acumulado sumando un caso al 29 de octubre.  Esto parece ser un error y se refleja como
+            descuadre de un caso en los totales.</dd>
+
+        <dt>2020-04-23</dt>
+        <dd>La cifra de 849 casos únicos acumulados por prueba molecular hasta el 22 de abril se obtuvo de
+            <a href="../source_material/2020-04/2020-04-22/2020-04-22_confirmed.jpg">esta gráfica publicada por el
+                Instituto de Estadísticas de Puerto Rico</a>. De
+            <a href="../source_material/2020-04/2020-04-23/2020-04-23_announcement.jpg">este boletín del 23 de abril</a>
+            se obtuvieron las cifras de 3 casos únicos nuevos y 871 casos únicos acumulados
+            por pruebas moleculares.  En conjunto dan un descuadre de 19 casos confirmados.
+            Nótese sin embargo que estos datos antedatan el boletín regular más temprano disponible
+            en las páginas del Departamento de Salud, fechado 25 de abril y con datos hasta el 24.</dd>
+    </dl>
+
+    <p>Cualquier otra fecha que no dé cero en esta gráfica hay que cotejar que se hayan
+        copiado correctamente los datos.</p>
+</div>
+
+
+<div class="section" id="BulletinChartMismatch_section">
+    <h1>Descuadre de boletín y gráficas</h1>
+
+    <div id="BulletinChartMismatch" class="chart"></div>
+    <script type="text/javascript" class="chart">
+      embedChart('BulletinChartMismatch', bulletin_date);
+    </script>
+
+    <h3>¿Qué es esto?</h3>
+
+    <p>Comparación entre los totales de casos acumulados reportados en la primera página
+        de cada boletín y las sumas de los datos por fecha de muestra en las gráficas de
+        este mismo boletín.  Esto es un cotejo de calidad de datos.</p>
+
+    <h3>Descuadres constatados en los datos de fuente</h3>
+
+    <dl>
+        <dt>2021-01-05</dt>
+        <dd>La tabla de casos probable por fecha de muestra, de nuevo, está completamente mal y no
+            cuadra con nada. Semejante a lo que ocurrió entre el 28 y el 31 de diciembre.
+        </dd>
+
+        <dt>2020-12-28 a 2020-12-31</dt>
+        <dd>La tabla de casos probable por fecha de muestra está completamente mal y no cuadra
+            con nada. Suma cientos menos que el total que reporta, le faltan fechas, asigna el
+            valor equivocado a la mayoría de las fechas, etc. Metí las gráficas a WebPlotDigitizer
+            e hice cálculos para lograr obtener los datos correctos.
+        </dd>
+
+        <dt>2020-12-17</dt>
+        <dd>La tabla de casos probable por fecha de muestra hoy está completamente mal y no cuadra
+            con nada, suma a 4,373 cuando la portada y la gráfica dicen 4,528. Metí la gráfica a
+            WebPlotDigitizer e hice cálculos y logré obtener los datos correctos.
+        </dd>
+
+        <dt>2020-12-17</dt>
+        <dd>La tabla de casos confirmados por fecha de muestra hoy omite el 14 de diciembre. Estos
+            se pueden leer en las notas al calce al principio del boletín, que en una gráfica reporta
+            33 casos confirmados adicionales por muestras de esa fecha. Con esta corrección cuadra todo.
+        </dd>
+
+        <dt>2020-12-16</dt>
+        <dd>Las tablas de casos por fecha de muestra hoy omiten los casos confirmados, los probables
+            y los sospechosos para el 14 de diciembre. Estos se pueden leer en las notas al calce al
+            principio del boletín, que los reportan en sus gráficas correspondientes de casos
+            adicionales por fecha de muestra. Estos son 47 confirmados, 52 probables, y 74 sospechosos.
+            Aún así la gráfica de casos probables suma a 2,967, y esto descuadra con el total de
+            2,968 que reporta el boletín.
+        </dd>
+
+        <dt>2020-12-09</dt>
+        <dd>La tabla de casos probables publicada hoy tiene el mismo tipo de error que las del 7
+            y 8 de diciembre, así que se aplica la misma corrección para hacerla cuadrar: quitar
+            el caso que la tabla de datos recoge para el 24/jul pero que en la gráfica no aparece.
+        </dd>
+
+        <dt>2020-12-08</dt>
+        <dd>La tabla de casos probables publicada hoy tiene el mismo tipo de error que la del 7
+            y, semejantemente, la suma de los casos diarios después de corregir las fechas da
+            2,289 que no cuadra la de casos acumulados que reportan la misma tabla, la portada
+            del informe y la gráfica: 2,288. Luego (11/dic) aplicamos la corrección que logra el
+            cuadre: la tabla de datos tiene un caso para el 24/jul que la gráfica eliminó.
+        </dd>
+
+        <dt>2020-12-07</dt>
+        <dd>La tabla de casos probables publicada hoy está mal. La columna de acumulada dice
+            2,074 para el 5 de diciembre, pero los valores de la columna de frecuencia suman
+            a 2,075. Además, comparando los valores de cada fecha con los del boletín anterior,
+            se aprecia que hay una especie de error "off by one" entre las fechas y los valores,
+            en que a todas las hileras del 28/may al 25/nov tienen el valor que en verdad debería
+            corresponderle a la fecha de la hilera próxima, y la del 26/oct (última en la primera
+            columna de la tabla) tiene el valor que debería tener la del 28 de mayo. Esta corrección
+            se le aplicó a los datos que copiamos, pero aún así quedó el descuadre de un caso, que
+            el 11 de diciembre logré diagnosticar: la gráfica borra un caso que las anteriores
+            reportaban para el 2020-07-24, pero la tabla de datos aún recoge. Borrar este arregla
+            el descuadre.</dd>
+
+        <dt>2020-11-29</dt>
+        <dd>La gráfica dice 50,988 casos confirmados, pero por más que intente no logro copiar
+            números que cuadren, porque (a) la Parte I no tienen números, (b) las notas al calce
+            que desglosan cambios no dicen bien las fechas que se restaron duplicados, (c) los
+            totales de estas notas al calce no cuadran con los 50,988 casos de todos modos, y (d)
+            la gráfica Parte II de casos confirmados es una imagen ráster y sus números muchos
+            no son legibles. Así que lo llamo una victoria que mis datos copiados a manos sumen
+            a 50,989, solo uno más que este desastre de informe.</dd>
+
+        <dt>2020-07-02, 2020-07-04, 2020-07-06 y 2020-07-12</dt>
+        <dd>En estas gráficas de muertes se omitió la barra una muerte del 17 de marzo, registrada
+            en muchísimas otras gráficas anteriores. Sin embargo las mismas gráficas las cuentan
+            hacia el total de muertes acumuladas; es decir, las gráficas mismas exhibe el descuadre.</dd>
+
+        <dt>2020-09-28</dt>
+        <dd>En estas gráficas de muertes se omitió la barra una muerte del 28 de septiembre, que
+            sí se detalla en la nota al calce 5 al principio del informe. Sin embargo la misma gráfica
+            la cuentan hacia el total de 654 muertes acumuladas; es decir, la gráfica misma exhibe el
+            descuadre.</dd>
+    </dl>
+
+    <p>Cualquier otra fecha que no dé cero en esta gráfica hay que cotejar que se hayan
+        copiado correctamente los datos.</p>
+</div>
+
+
+<div class="section" id="Revisions_section">
+    <h1>Revisiones</h1>
+
+    <h3 id="Revisions_2020-12-02">3 de diciembre del 2020</h3>
+
+    <p>Para el boletín con datos hasta el 30 de noviembre el Departamento de Salud de
+        Puerto Rico rehizo sus gráficas de casos por fecha de muestra, tal que comenzaron
+        a omitir las etiquetas con el valor numérico de cada barra.  Tras quejas de
+        periodistas, para el boletín del 2 de diciembre añadieron tablas aparte con estos
+        datos.  Las notas al calce detallando los casos adicionales y la tabla del boletín del
+        2 de diciembre bastaron para reconstruir los casos confirmados por fecha de muestra y
+        las muertes por fecha de deceso, pero no para reconstruir los casos probables por fecha
+        de muestra.</p>
+
+    <p>Por este motivo, me fue necesario estimar los números de casos probables por fecha de
+        muestra para el 2020-11-30 y 2020-12-01 usando un programa de escáner de gráficos
+        (<a href="https://automeris.io/WebPlotDigitizer/">WebPlotDigitizer</a>) cotejando los
+        resultados de este manualmente contra las sumas que sí se podían calcular a partir de los
+        boletines, calculando el error promedio por barra del escáner y aplicando una corrección
+        correspondiente.</p>
+
+    <p>Con todo el cuidado que tomé, entiendo que no se puede reconstruir con mayor precisión los
+        valores de casos probables por fecha de muestra para los boletines del 2020-11-30 y
+        2020-12-01, pero algún pequeño error puede haberse colado.</p>
+
+
+    <h3 id="Revisions_2020-11-14">Revisión 14 de noviembre del 2020</h3>
+
+    <p>Desde esta fecha se adoptó el API <code>/api/administration/reports/orders/basic</code>
+        de Bioportal, que provee un campo <code>resultCreatedAt</code> que dice precisamente
+        cuándo se recibió en Bioportal el resultado de cada prueba. Anterior a esto, como
+        detallan las notas sobre revisiones anteriores, no existía campo que dijera esta
+        información de manera fiable y nos veíamos forzados a estimar esta fecha a partir
+        de la fecha y hora de las descargas diarias que realizo yo.</p>
+
+    <p>Este cambio lo aplico retroactivamente a todas las páginas, por lo cual todas las
+        cifras que dependan de Bioportal se ven ligeramente cambiadas, pero los valores
+        nuevos deben ser más precisos y más reproducibles por otras partes que descarguen
+        de Bioportal indepedientemente.</p>
+
+
+    <h3 id="Revisions_2020-08-30">Revisión 30 de agosto del 2020</h3>
+
+    <p>Desde esta fecha esta página adoptó un nuevo, mejorado método de reproducibilidad
+        de datos y adjudicación de fecha de datos a Bioportal.  El método consiste de:</p>
+
+    <ol>
+        <li>Registrar la fecha y hora (en UTC) de cada descarga que hacemos del API de
+            Bioportal, en un campo <code>downloadedAt</code> que le añadimos a cada récord;</li>
+        <li>Hacer "check-in" de cada tal archivo (en formato CSV) al repositorio de Github;</li>
+        <li>Generar un campo de <code>bulletin_date</code> sintético a partir de (a) convertir
+            el valor de <code>downloadedAt</code> a horario de Puerto Rico, (b) truncarle los
+            campos de hora para quedarnos solo con la fecha, y (c) restarle un día;</li>
+        <li>Usar este campo <code>bulletin_date</code> para calcular los cambios de dato de
+            día a día.</li>
+    </ol>
+
+    <p>La desventaja de este método es que cuáles récords terminan adjudicándose a cúal
+        <code>bulletin_date</code> resulta ser un artefactor de cuándo el autor de esta
+        página realiza su descarga matutina de Bioportal.</p>
+
+    <p>La ventaja del método es que las alternativas son mucho más peores.  Ninguno de los
+        campos disponibles en las descargas en realidad permite ordenar los récords de manera
+        fiable respecto a cuándo se marcó el resultado.  Tras conversaciones con fuentes de
+        entero crédito:</p>
+
+    <ul>
+        <li>El campo <code>createdAt</code> adolece del problema que muchos récords de resultado
+            de prueba se crean en Bioportal antes de que se conozca el resultado.  Los usuarios
+            entran los detalles básicos de la prueba y guardan el formulario sin completarlo,
+            y luego lo completan días después cuando se conoce el resultado.  Y en tales casos,
+            el <code>createdAt</code> recoge una fecha anterior a la del resultado.</li>
+        <li>El campo <code>reportedAt</code> se supone que recoja la fecha en que el laboratorio
+            advino en conocimiento del resultado, pero hay tardanzas aleatorias de 1-5 días entre
+            esta fecha y cuándo aparece el récord en las descargas del API.</li>
+    </ul>
+
+
+    <h3 id="Revisions_2020-08-08">Revisión 8 de agosto del 2020</h3>
+
+    <p>Antes de esta fecha se usaba el campo <code>createdAt</code> como la fecha de reporte
+        de los resultados de pruebas descargados del API de Bioportal, porque el autor de este
+        análisis inicialmente juzgó poco fiable el campo <code>reportedDate</code> dado a que
+        para muchísimas pruebas exhibe valores más tempranos tanto que <code>collectedDate</code>
+        que como <code>createdAt</code>. En "arroz y habichuelas":</p>
+
+    <ul>
+        <li>Un montón de récords del API de resultados pruebas de Salud dicen, literalmente,
+            que se reportaron más temprano que lo que se tomó la muestra o que lo que el API
+            de Salud dice que se creó récord.</li>
+    </ul>
+
+    <p>Análisis más a fondo ha llevado al autor a revisar este supuesto y asignarle más
+        fiabilidad al campo <code>reportedDate</code> que al <code>createdAt</code>, aunque
+        aún queda claro por qué este segundo sería tan poco fiable.  Por eso se ha cambiado
+        a usar <code>reportedDate</code> como el campo de fecha de datos.</p>
+
+    <p>Este dashboard recalcula todos los datos retroactivamente para cada fecha de boletín,
+        así que este cambio quiere decir que los cambios diarios entre fechas anteriores a
+        esta revisión se han recalculado para reflejar esto, y así mismo los rezagos de pruebas,
+        que bajo la nueva definición que aquí se adopta dan cifras mucho menores que bajo la
+        definición anterior.</p>
+
+    <p>Del análisis de los datos se espera que este cambio mejore bastante el que reportes
+        en fechas más tardías logren reproducir los valores calculados con datos de pruebas
+        dispoibles solo hasta fechas pasadas, pero el autor ha logrado constatarse que esta
+        reproducibilidad no se puede lograr 100% usando los datos de una sola descarga del
+        API de Salud, porque no se provee ni un identificador único para cada prueba que
+        permita detectar revisiones a su récord (que sí parecen haber), ni un campo de
+        tiempo que aumente monotónicamente que permita segregar los récords respecto al
+        tiempo de descarga de manera reproducible.  <em>Caveat emptor</em>.</p>
+
+    <p>Cabe mencionar que el autor de esta página guarda un historial completo de todas las
+        descargas que se han usado en esta página que como último recurso se pueden usar para
+        lograr tal reproducibilidad, pero a costa de multiplicar enormemente el volumen de datos
+        usado para generar este análisis.  Al momento el autor juzga que esta vía no amerita el
+        costo.</p>
+
+
+    <h3 id="Revisions_2020-07-03">Revisión 3 de julio del 2020</h3>
+
+    <p>Para el cálculo del rezago de muertes, se adoptron dos cambios:</p>
+
+    <ol>
+        <li>El mismo cambio de procedimento descrito abajo para el 5 de junio respecto
+            a los casos confirmados y probables, que consiste en ignorar las restas;</li>
+        <li>Excluir del cálculo de rezago de muertes todas las fechas hasta el 18 de abril
+            (incluído), por adolecer estas de repetidos errores por parte de Salud.</li>
+    </ol>
+
+    <h3 id="Revisions_2020-06-05">Revisión 5 de junio del 2020</h3>
+
+    <p>El método de cálculo de esta gráfica se revisó el 5 de junio y se aplicó
+        el cambio retroactivamente a fechas anteriores.  Antes de esa revisión,
+        las fechas con números negativos se incorporaban en los totales, cosa que
+        tendía a rebajar el estimado.  Esto se hacía por entenderse que:</p>
+
+    <ol>
+        <li>Muchas de las restas correspondían no a casos nuevos sino a revisiones
+            de fecha de casos conocidos;</li>
+        <li>Las fechas en que aparecen sumas o ceros probablemente son resultado
+            también en muchos casos de una combinación de sumas y restas, así que
+            excluir las fechas que esos totales dan negativo en realidad no excluye
+            todas las restas.</li>
+    </ol>
+
+    <p>Se abandonó este procedimiento porque hubo boletines que claramente violaron
+        el primer supuesto de manera tan crasa que daban estimado de rezago negativo.
+        Después de la revisión sólo las sumas se toman en cuenta para calcular los
+        rezagos de pruebas.  El rezago de muertes sin embargo aun se calcula mediante
+        el criterio original.</p>
+</div>
+
+<div class="section" id="Terminology_section">
+    <h1>Terminología</h1>
+
+    <h3>Fecha de boletín</h3>
+    <p>Las fechas que aparecen a la cabecera de los boletines que emite a diario
+        el Departamento de Salud de Puerto Rico sobre los casos conocidos de COVID-19
+        en Puerto Rico.  Estos boletines recopilan datos <b>hasta la fecha anterior
+        a cuando se publican</b>; por ejemplo, el boletín que dice 2 de mayo se publicó
+        el 3 de mayo.</p>
+
+    <p><b>ADVERTENCIA:</b> Muchas bases de datos y reportajes usan la fecha que se publicó
+        el boletín en vez de la fecha que dice este, y por eso atribuyen los mismos números
+        aquí al próximo día.</p>
+
+
+    <h3>Fecha de evento</h3>
+    <p>La fecha en que en realidad sucedió un evento, según el boletín.  Para las cifras
+        de muertes, esta es la fecha en que sucedió la muerte.  Para casos confirmados y
+        probables, esto es la fecha en que se tomó muestra que se sometió a prueba.  Los
+        boletines no aclaran qué fecha se usa para pacientes a los cuales se les administró
+        más de una prueba.</p>
+
+    <p><b>ADVERTENCIA:</b> Muchas bases de datos y reportajes usan la fecha de boletín o
+        anuncio en vez de la de evento, y por eso no coinciden con los resultados que
+        da este análisis.  Dar el análisis por fecha de evento en vez de boletín o anuncio
+        es lo que motiva este proyecto.</p>
+
+    <h3>Caso confirmado</h3>
+    <p>Término que el Departamento de Salud de Puerto Rico usa para denominar a un
+        paciente único que ha dado positivo a una prueba molecular (PCR) de SARS-CoV-2.</p>
+
+    <h3>Caso probable</h3>
+    <p>Este término ha tenido una historia problemática de uso por el Departamento de Salud
+        de Puerto Rico. Del 10 de junio hasta el 4 de noviembre del 2020, Salud denominó "caso
+        probable" a un paciente no duplicado que ha diera positivo a una prueba serológica. En
+        esto el Departamento reclamaba cumplir con
+        <a href="https://wwwn.cdc.gov/nndss/conditions/coronavirus-disease-2019-covid-19/case-definition/2020/">la
+            guía del 5 de abril del 2020 del Consejo de Epidemiólogos Estatales y Territoriales
+            (CSTE) de los EEUU</a>, pero esta guía no de hecho no recomendaba la adjudicación de
+        casos probable sólo con una prueba serológica positiva, sino que requería evidencia clínica
+        o epidemiológica adicional a esta prueba. Por este motivo las cifras de casos "probables"
+        que se reportaban eran artificialmente infladas.</p>
+
+    <p>El 5 de noviembre del 2020 el Departamento de Salud adoptó
+        <a href="https://wwwn.cdc.gov/nndss/conditions/coronavirus-disease-2019-covid-19/case-definition/2020/08/05/">la
+        segunda versión (5 de agosto del 2020) de la guía del Consejo de Epidemiólogos Estatales y
+            Territoriales</a>, que usa el término "caso probable" para denominar casos únicos con
+        una prueba de antígenos positiva.</p>
+
+    <p>Esta página en su momento usó el término "caso probable" en el primer, mal sentido que hizo
+        el Departamento de Salud de Puerto Rico, pero luego revisó todo retroactivamente para adaptarse
+        a la nueva definición.</p>
+</div>
+
+<div class="section" id="Sources_section">
+    <h1>Datos fuente para 2021-01-28</h1>
+
+    Estas son las imágenes de los boletines del Departamento de Salud que
+    se usaron para elaborar este análisis.
+
+    <figure>
+        <img class="figure_chart" src="../source_material/2021-01/2021-01-28/2021-01-28_announcement.jpg">
+        <figcaption>Fuente: Departamento de Salud de Puerto Rico</figcaption>
+    </figure>
+
+
+    <h3>Casos únicos confirmados 2021-01-28 (vs. 2021-01-27)</h3>
+
+    <figure>
+        <img class="figure_chart" src="../source_material/2021-01/2021-01-28/2021-01-28_confirmed.jpg">
+        <figcaption>Fuente: Departamento de Salud de Puerto Rico</figcaption>
+    </figure>
+
+    <figure>
+        <img class="figure_chart" src="../source_material/2021-01/2021-01-27/2021-01-27_confirmed.jpg">
+        <figcaption>Fuente: Departamento de Salud de Puerto Rico</figcaption>
+    </figure>
+
+
+    <h3>Casos únicos probables 2021-01-28 (vs. 2021-01-27)</h3>
+
+    <figure>
+        <img class="figure_chart" src="../source_material/2021-01/2021-01-28/2021-01-28_probable.jpg">
+        <figcaption>Fuente: Departamento de Salud de Puerto Rico</figcaption>
+    </figure>
+
+    <figure>
+        <img class="figure_chart" src="../source_material/2021-01/2021-01-27/2021-01-27_probable.jpg">
+        <figcaption>Fuente: Departamento de Salud de Puerto Rico</figcaption>
+    </figure>
+
+
+    <h3>Muertes 2021-01-28 (vs. 2021-01-27)</h3>
+
+    <figure>
+        <img class="figure_chart" src="../source_material/2021-01/2021-01-28/2021-01-28_deaths.jpg">
+        <figcaption>Fuente: Departamento de Salud de Puerto Rico</figcaption>
+    </figure>
+
+    <figure>
+        <img class="figure_chart" src="../source_material/2021-01/2021-01-27/2021-01-27_deaths.jpg">
+        <figcaption>Fuente: Departamento de Salud de Puerto Rico</figcaption>
+    </figure>
+
+</div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</body>
+</html>
